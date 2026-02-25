@@ -48,13 +48,23 @@
 - [x] Criar templates de email profissionais
 - [x] Implementar sistema de inscrição em notificações
 
-## Fase 8: Testes e Otimização
+## Fase 8: Redesign para Jornal de Investigação
+- [x] Integrar logo "Boca Aberta" no header
+- [x] Redesenhar homepage como jornal com manchetes
+- [x] Criar componentes de cards de investigação
+- [x] Implementar paleta vermelho/preto/amarelo
+- [x] Criar seção "Destaques do Dia"
+- [x] Criar seção "Onde está o dinheiro?"
+- [x] Redesenhar página de relatórios com filtros visuais
+- [ ] Implementar cards de denúncias com visual impactante
+- [ ] Testar responsividade mobile
+- [ ] Validar acessibilidade
+
+## Fase 9: Testes e Otimização
 - [ ] Testar fluxo completo de publicação
 - [ ] Testar fluxo de denúncia
 - [ ] Testar busca e filtros
 - [ ] Otimizar performance de queries
-- [ ] Testar responsividade mobile
-- [ ] Validar acessibilidade
 
 ## Funcionalidades Extras (Backlog)
 - [ ] Exportar relatórios em CSV/Excel

@@ -175,3 +175,116 @@
     }
   }
 }
+
+/* ===== ESTILOS DO JORNAL BOCA ABERTA ===== */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap");
+
+/* Tipografia */
+.font-headline {
+  @apply font-black text-4xl md:text-5xl lg:text-6xl tracking-tight;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.font-subheadline {
+  @apply font-bold text-2xl md:text-3xl tracking-wide;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.main-headline {
+  @apply text-5xl md:text-6xl lg:text-7xl font-black text-white drop-shadow-lg;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px rgb(220, 38, 38), 6px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards de Investigação */
+.investigation-card {
+  @apply relative overflow-hidden rounded-lg border-2 border-red-600 bg-black p-6 text-white shadow-lg transition-transform hover:scale-105;
+}
+
+.investigation-card::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600;
+}
+
+/* Faixas de Cor */
+.stripe-yellow {
+  @apply relative border-t-4 border-b-4 border-yellow-400 py-2;
+}
+
+.stripe-red {
+  @apply relative border-t-4 border-b-4 border-red-600 py-2;
+}
+
+/* Cabeçalho de Seção */
+.section-header {
+  @apply relative border-b-4 border-red-600 pb-3 text-3xl font-black text-black dark:text-white;
+  background: linear-gradient(90deg, rgb(250, 204, 21) 0%, transparent 100%);
+  padding-left: 1rem;
+}
+
+/* Números em Destaque */
+.big-number {
+  @apply text-4xl md:text-5xl lg:text-6xl font-black text-red-600;
+}
+
+.currency-highlight {
+  @apply text-3xl md:text-4xl font-black text-yellow-400;
+}
+
+/* Caixa de Destaque */
+.highlight-box {
+  @apply relative border-l-4 border-red-600 bg-yellow-50 p-4 dark:bg-gray-900;
+}
+
+.highlight-box::before {
+  content: "!";
+  @apply absolute -left-3 -top-2 text-3xl font-black text-red-600;
+}
+
+/* Efeito de Splatter */
+.splatter-effect {
+  @apply relative;
+  filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
+}
+
+/* Cores do Jornal */
+.text-journal-red {
+  @apply text-red-600;
+}
+
+.text-journal-black {
+  @apply text-black;
+}
+
+.text-journal-yellow {
+  @apply text-yellow-400;
+}
+
+.bg-journal-red {
+  @apply bg-red-600;
+}
+
+.bg-journal-black {
+  @apply bg-black;
+}
+
+.bg-journal-yellow {
+  @apply bg-yellow-400;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .font-headline {
+    @apply text-2xl md:text-3xl;
+  }
+
+  .main-headline {
+    @apply text-3xl md:text-4xl;
+  }
+
+  .big-number {
+    @apply text-2xl md:text-3xl;
+  }
+}

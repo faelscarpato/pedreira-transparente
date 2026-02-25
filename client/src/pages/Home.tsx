@@ -1,253 +1,242 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { getLoginUrl } from "@/const";
-import { ArrowRight, FileText, AlertCircle, TrendingUp, Shield, Bell } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { ArrowRight, TrendingUp, AlertTriangle, DollarSign, FileText, MessageCircle } from "lucide-react";
+import { trpc } from "@/lib/trpc";
 import { useLocation } from "wouter";
 
 export default function Home() {
-  const { user, isAuthenticated } = useAuth();
+  const { user } = useAuth();
   const [, navigate] = useLocation();
+  const { data: reports } = trpc.reports.list.useQuery({ limit: 6, offset: 0 });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
-      {/* Header */}
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Shield className="w-8 h-8 text-blue-600" />
-            <h1 className="text-2xl font-bold text-slate-900">Pedreira Transparente</h1>
+    <div className="min-h-screen bg-black text-white">
+      {/* Header do Jornal */}
+      <header className="border-b-4 border-red-600 bg-black py-6">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-4">
+              <div className="text-4xl font-black">
+                <span className="text-red-600">BOCA</span>
+                <span className="text-white ml-2">ABERTA</span>
+              </div>
+              <div className="hidden md:block border-l-4 border-yellow-400 pl-4">
+                <p className="text-yellow-400 font-bold text-sm">O DESTINO DO SEU DINHEIRO NA CARA!</p>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <Button variant="outline" size="sm" onClick={() => navigate("/reports")}>
+                Relatórios
+              </Button>
+              {user ? (
+                <Button size="sm" onClick={() => navigate("/admin")}>
+                  Painel Admin
+                </Button>
+              ) : (
+                <Button size="sm" onClick={() => navigate("/subscribe")}>
+                  Inscrever-se
+                </Button>
+              )}
+            </div>
           </div>
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-slate-600 hover:text-slate-900 transition">Funcionalidades</a>
-            <a href="#reports" className="text-slate-600 hover:text-slate-900 transition">Relatórios</a>
-            <a href="#contact" className="text-slate-600 hover:text-slate-900 transition">Contato</a>
-            {isAuthenticated ? (
-              <Button onClick={() => navigate("/admin")} variant="default">
-                Painel Admin
-              </Button>
-            ) : (
-              <Button asChild variant="default">
-                <a href={getLoginUrl()}>Entrar</a>
-              </Button>
-            )}
+          <nav className="flex gap-6 border-t border-gray-700 pt-4 text-sm font-bold">
+            <a href="#" className="text-yellow-400 hover:text-yellow-300">INÍCIO</a>
+            <a href="#" className="text-white hover:text-yellow-400">LICITAÇÕES</a>
+            <a href="#" className="text-white hover:text-yellow-400">GASTOS</a>
+            <a href="#" className="text-white hover:text-yellow-400">INVESTIGAÇÕES</a>
+            <a href="#" className="text-white hover:text-yellow-400">TRANSPARÊNCIA</a>
+            <a href="#" className="text-white hover:text-yellow-400">CONTATO</a>
           </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Transparência Pública ao Alcance de Todos
-          </h2>
-          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+      {/* Manchete Principal */}
+      <section className="bg-gradient-to-r from-red-600 to-red-800 py-12 border-b-4 border-yellow-400">
+        <div className="container mx-auto">
+          <h1 className="main-headline mb-4">
+            FISCALIZE O EXECUTIVO E O LEGISLATIVO
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl">
             Acesse relatórios de auditoria, projetos de lei e denúncias de forma clara e acessível. 
-            Cobre o executivo e o legislativo com informações confiáveis e verificadas.
+            Cobre o governo com informações confiáveis e verificadas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="gap-2">
-              <a href="#reports">
-                Consultar Relatórios <ArrowRight className="w-4 h-4" />
-              </a>
+          <div className="flex gap-4">
+            <Button 
+              size="lg" 
+              className="bg-yellow-400 text-black font-bold hover:bg-yellow-300"
+              onClick={() => navigate("/reports")}
+            >
+              Consultar Relatórios <ArrowRight className="ml-2" />
             </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href="#complaints">Fazer Denúncia</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="bg-white py-20">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl font-bold text-center text-slate-900 mb-12">
-            Como Funciona
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: FileText,
-                title: "Relatórios Diários",
-                description: "Acesse Diário Oficial, Projetos de Lei e Emendas publicados diariamente com análise jurídica completa."
-              },
-              {
-                icon: TrendingUp,
-                title: "Indicadores de Conformidade",
-                description: "Visualize automaticamente indicadores de conformidade com legislação municipal e federal."
-              },
-              {
-                icon: AlertCircle,
-                title: "Denúncias Cidadãs",
-                description: "Registre irregularidades e denuncie atos públicos suspeitos de forma segura e anônima."
-              },
-              {
-                icon: Bell,
-                title: "Notificações",
-                description: "Receba alertas por email sobre novos relatórios e irregularidades críticas detectadas."
-              },
-              {
-                icon: Shield,
-                title: "Análise Especializada",
-                description: "Resumos em linguagem acessível gerados por IA para facilitar compreensão de documentos complexos."
-              },
-              {
-                icon: TrendingUp,
-                title: "Histórico Completo",
-                description: "Acesse todo o histórico de atos públicos com busca avançada e filtros por tipo e data."
-              }
-            ].map((feature, idx) => (
-              <Card key={idx} className="border-slate-200 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <feature.icon className="w-8 h-8 text-blue-600 mb-2" />
-                  <CardTitle className="text-lg">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-slate-600">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Reports Preview Section */}
-      <section id="reports" className="py-20">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl font-bold text-center text-slate-900 mb-12">
-            Últimos Relatórios
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {[
-              {
-                type: "Diário Oficial",
-                title: "Edição 1950 - 11/02/2026",
-                date: "11 de fevereiro de 2026",
-                issues: 3
-              },
-              {
-                type: "Projeto de Lei",
-                title: "PLO 45/2025 - Programa É Tempo de Leitura",
-                date: "26 de junho de 2025",
-                issues: 0
-              },
-              {
-                type: "Decreto",
-                title: "Decreto 4.379/2026 - SAAE",
-                date: "10 de fevereiro de 2026",
-                issues: 1
-              },
-              {
-                type: "Emenda",
-                title: "Emenda ao Decreto 4.340/2026",
-                date: "03 de dezembro de 2025",
-                issues: 2
-              }
-            ].map((report, idx) => (
-              <Card key={idx} className="border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <div className="text-sm font-semibold text-blue-600 mb-1">{report.type}</div>
-                      <CardTitle className="text-lg">{report.title}</CardTitle>
-                      <CardDescription>{report.date}</CardDescription>
-                    </div>
-                    {report.issues > 0 && (
-                      <div className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
-                        {report.issues} {report.issues === 1 ? "achado" : "achados"}
-                      </div>
-                    )}
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-          <div className="text-center">
-            <Button asChild variant="outline" size="lg">
-              <a href="/reports">Ver Todos os Relatórios</a>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+              onClick={() => navigate("/complaints/new")}
+            >
+              Fazer Denúncia
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Complaints Section */}
-      <section id="complaints" className="bg-white py-20">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <h3 className="text-3xl font-bold text-center text-slate-900 mb-6">
-            Denuncie Irregularidades
-          </h3>
-          <p className="text-center text-slate-600 mb-8">
-            Sua denúncia é importante para manter a transparência pública. 
-            Você pode denunciar de forma anônima ou identificada.
-          </p>
-          <Card className="border-slate-200">
-            <CardHeader>
-              <CardTitle>Registrar Denúncia</CardTitle>
-              <CardDescription>
-                Descreva a irregularidade detectada e anexe evidências
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button asChild className="w-full" size="lg">
-                <a href="/complaints/new">Abrir Formulário de Denúncia</a>
+      {/* Destaques do Dia */}
+      <section className="py-12 bg-black border-b-4 border-red-600">
+        <div className="container mx-auto">
+          <div className="section-header mb-8">DESTAQUES DO DIA</div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="investigation-card">
+              <div className="mb-4">
+                <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">GASTOS</span>
+              </div>
+              <h3 className="text-2xl font-black mb-3">R$ 5 MILHÕES EM FESTAS?</h3>
+              <p className="text-gray-300 mb-4">Prefeitura gastou uma fortuna em eventos. Veja os detalhes.</p>
+              <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                Saiba Mais
               </Button>
-            </CardContent>
-          </Card>
+            </div>
+
+            {/* Card 2 */}
+            <div className="investigation-card">
+              <div className="mb-4">
+                <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">LICITAÇÃO</span>
+              </div>
+              <h3 className="text-2xl font-black mb-3">CONTRATO SUSPEITO</h3>
+              <p className="text-gray-300 mb-4">R$ 800 mil em material de papelaria sem licitação aberta.</p>
+              <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                Analise o Caso
+              </Button>
+            </div>
+
+            {/* Card 3 */}
+            <div className="investigation-card">
+              <div className="mb-4">
+                <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">OBRAS</span>
+              </div>
+              <h3 className="text-2xl font-black mb-3">OBRAS PARADAS</h3>
+              <p className="text-gray-300 mb-4">R$ 2 milhões investidos em projetos abandonados.</p>
+              <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                Ver Reportagem
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold text-white mb-4">
-            Receba Notificações de Novos Relatórios
-          </h3>
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Inscreva-se para receber alertas por email quando novos relatórios forem publicados 
-            ou irregularidades críticas forem detectadas.
+      {/* Onde está o dinheiro? */}
+      <section className="py-12 bg-gray-900 border-b-4 border-yellow-400">
+        <div className="container mx-auto">
+          <div className="section-header mb-8">ONDE ESTÁ O DINHEIRO?</div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Receitas */}
+            <div className="bg-black border-2 border-green-600 rounded-lg p-6">
+              <h3 className="text-2xl font-black text-green-400 mb-4">RECEITAS MUNICIPAIS</h3>
+              <div className="text-5xl font-black text-green-400 mb-2">R$ 235 MILHÕES</div>
+              <p className="text-gray-400 text-sm">Arrecadação total do município em 2025</p>
+              <Button variant="outline" size="sm" className="mt-4 border-green-400 text-green-400">
+                Acessar Painel
+              </Button>
+            </div>
+
+            {/* Despesas */}
+            <div className="bg-black border-2 border-red-600 rounded-lg p-6">
+              <h3 className="text-2xl font-black text-red-600 mb-4">DESPESAS MUNICIPAIS</h3>
+              <div className="text-5xl font-black text-red-600 mb-2">R$ 278 MILHÕES</div>
+              <p className="text-gray-400 text-sm">Gastos totais do município em 2025</p>
+              <Button variant="outline" size="sm" className="mt-4 border-red-600 text-red-600">
+                Acessar Painel
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Relatórios Recentes */}
+      <section className="py-12 bg-black border-b-4 border-red-600">
+        <div className="container mx-auto">
+          <div className="section-header mb-8">RELATÓRIOS RECENTES</div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {reports?.reports?.slice(0, 4).map((report) => (
+              <Card key={report.id} className="bg-gray-900 border-gray-700 p-6 hover:border-red-600 transition-colors">
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <span className="bg-red-600 text-white px-2 py-1 text-xs font-bold rounded">
+                      {report.type.toUpperCase()}
+                    </span>
+                  </div>
+                  <span className="text-gray-500 text-sm">
+                    {new Date(report.publishedDate).toLocaleDateString("pt-BR")}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-white mb-2">{report.title}</h3>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">{report.description}</p>
+                <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400">
+                  Ler Relatório
+                </Button>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Button 
+              size="lg" 
+              className="bg-red-600 hover:bg-red-700"
+              onClick={() => navigate("/reports")}
+            >
+              Ver Todos os Relatórios <ArrowRight className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA - Denúncias */}
+      <section className="py-12 bg-gradient-to-r from-red-600 to-red-800 border-b-4 border-yellow-400">
+        <div className="container mx-auto text-center">
+          <AlertTriangle className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
+          <h2 className="text-4xl font-black mb-4">ENCONTROU UMA IRREGULARIDADE?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Denuncie gastos suspeitos, contratos irregulares e obras paradas. 
+            Suas denúncias são analisadas e publicadas com segurança.
           </p>
-          <Button asChild variant="secondary" size="lg">
-            <a href="/subscribe">Inscrever-se Agora</a>
+          <Button 
+            size="lg" 
+            className="bg-yellow-400 text-black font-bold hover:bg-yellow-300"
+            onClick={() => navigate("/complaints/new")}
+          >
+            Fazer Denúncia Agora
+          </Button>
+        </div>
+      </section>
+
+      {/* CTA - Inscrição */}
+      <section className="py-12 bg-black border-b-4 border-red-600">
+        <div className="container mx-auto text-center">
+          <FileText className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
+          <h2 className="text-4xl font-black mb-4">RECEBA NOTIFICAÇÕES</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Seja notificado quando novos relatórios forem publicados e quando denúncias críticas forem registradas.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-yellow-400 text-black font-bold hover:bg-yellow-300"
+            onClick={() => navigate("/subscribe")}
+          >
+            Inscrever-se por Email
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h4 className="font-bold text-white mb-4">Sobre</h4>
-              <p className="text-sm">
-                Plataforma de transparência e auditoria cidadã para o município de Pedreira/SP.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Links</h4>
-              <ul className="text-sm space-y-2">
-                <li><a href="#" className="hover:text-white transition">Relatórios</a></li>
-                <li><a href="#" className="hover:text-white transition">Denúncias</a></li>
-                <li><a href="#" className="hover:text-white transition">FAQ</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Legal</h4>
-              <ul className="text-sm space-y-2">
-                <li><a href="#" className="hover:text-white transition">Privacidade</a></li>
-                <li><a href="#" className="hover:text-white transition">Termos</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Contato</h4>
-              <p className="text-sm">
-                Email: contato@pedreiratransparente.gov.br<br/>
-                Tel: (19) 3000-0000
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-slate-700 pt-8 text-center text-sm">
-            <p>&copy; 2026 Pedreira Transparente. Todos os direitos reservados.</p>
-          </div>
+      <footer className="bg-gray-900 border-t border-gray-700 py-8">
+        <div className="container mx-auto text-center text-gray-400">
+          <p className="mb-4">Boca Aberta - Plataforma de Transparência e Auditoria Cidadã</p>
+          <p className="text-sm">Desenvolvido para fiscalizar o executivo e o legislativo municipal</p>
+          <p className="text-xs mt-4">© 2026 - Todos os direitos reservados</p>
         </div>
       </footer>
     </div>

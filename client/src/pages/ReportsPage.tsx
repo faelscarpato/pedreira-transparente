@@ -1,175 +1,229 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { FileText, Search, Filter, Calendar } from "lucide-react";
+import { ArrowRight, Search, FileText, AlertTriangle } from "lucide-react";
 import { trpc } from "@/lib/trpc";
+import { useLocation } from "wouter";
 
 export default function ReportsPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [filterType, setFilterType] = useState<string>("all");
-  const [sortBy, setSortBy] = useState("date_desc");
-  const [page, setPage] = useState(1);
+  const [, navigate] = useLocation();
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedType, setSelectedType] = useState<"diario_oficial" | "plo" | "emenda" | "decreto" | "outro" | null>(null);
+  const [offset, setOffset] = useState(0);
+  const limit = 12;
 
-  const { data: reportsData, isLoading } = trpc.reports.list.useQuery({
-    limit: 20,
-    offset: (page - 1) * 20,
-    type: filterType !== "all" ? (filterType as any) : undefined,
-    sortBy: sortBy as any,
+  const { data: reports, isLoading } = trpc.reports.list.useQuery({
+    limit,
+    offset,
+    type: selectedType || undefined,
   });
 
+  const reportTypes = [
+    { id: "diario_oficial" as const, label: "Diário Oficial", icon: "📰" },
+    { id: "plo" as const, label: "Projetos de Lei", icon: "⚖️" },
+    { id: "emenda" as const, label: "Emendas", icon: "✏️" },
+    { id: "decreto" as const, label: "Decretos", icon: "📋" },
+    { id: "outro" as const, label: "Outros", icon: "📄" },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <h1 className="text-2xl font-bold text-slate-900">Relatórios de Auditoria</h1>
-          <p className="text-slate-600 mt-1">Consulte Diário Oficial, Projetos de Lei e análises jurídicas</p>
+      <header className="border-b-4 border-red-600 bg-black py-6 sticky top-0 z-50">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-3xl font-black cursor-pointer" onClick={() => navigate("/")}>
+              <span className="text-red-600">BOCA</span>
+              <span className="text-white ml-2">ABERTA</span>
+            </h1>
+            <Button variant="outline" onClick={() => navigate("/")}>
+              ← Voltar
+            </Button>
+          </div>
         </div>
       </header>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        {/* Search and Filters */}
-        <div className="bg-white rounded-lg border border-slate-200 p-6 mb-8">
-          <div className="space-y-4">
-            {/* Search Bar */}
-            <div className="relative">
-              <Search className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
-              <Input
-                placeholder="Buscar por título, descrição ou palavra-chave..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10"
-              />
-            </div>
+      {/* Seção de Busca */}
+      <section className="bg-gradient-to-r from-red-600 to-red-800 py-8 border-b-4 border-yellow-400">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-black mb-6">CONSULTE OS RELATÓRIOS</h2>
+          
+          {/* Barra de Busca */}
+          <div className="relative mb-6">
+            <Search className="absolute left-4 top-4 w-5 h-5 text-gray-400" />
+            <Input
+              type="text"
+              placeholder="Buscar por título, descrição ou palavra-chave..."
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setOffset(0);
+              }}
+              className="pl-12 py-3 text-black"
+              disabled
+            />
+            <p className="text-xs text-gray-200 mt-2">Busca por texto em desenvolvimento</p>
+          </div>
 
-            {/* Filters */}
-            <div className="grid md:grid-cols-3 gap-4">
-              <div>
-                <label className="text-sm font-medium text-slate-700 mb-2 block">Tipo de Ato</label>
-                <Select value={filterType} onValueChange={setFilterType}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">Todos os tipos</SelectItem>
-                    <SelectItem value="diario_oficial">Diário Oficial</SelectItem>
-                    <SelectItem value="plo">Projeto de Lei</SelectItem>
-                    <SelectItem value="emenda">Emenda</SelectItem>
-                    <SelectItem value="decreto">Decreto</SelectItem>
-                    <SelectItem value="outro">Outro</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div>
-                <label className="text-sm font-medium text-slate-700 mb-2 block">Ordenar por</label>
-                <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="date_desc">Mais Recentes</SelectItem>
-                    <SelectItem value="date_asc">Mais Antigos</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="flex items-end">
-                <Button className="w-full gap-2">
-                  <Filter className="w-4 h-4" />
-                  Aplicar Filtros
-                </Button>
-              </div>
-            </div>
+          {/* Filtros por Tipo */}
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => {
+                setSelectedType(null);
+                setOffset(0);
+              }}
+              className={`px-4 py-2 rounded font-bold transition-colors ${
+                selectedType === null
+                  ? "bg-yellow-400 text-black"
+                  : "bg-black border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+              }`}
+            >
+              Todos
+            </button>
+            {reportTypes.map((type) => (
+              <button
+                key={type.id}
+                onClick={() => {
+                  setSelectedType(type.id);
+                  setOffset(0);
+                }}
+                className={`px-4 py-2 rounded font-bold transition-colors flex items-center gap-2 ${
+                  selectedType === type.id
+                    ? "bg-yellow-400 text-black"
+                    : "bg-black border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                }`}
+              >
+                <span>{type.icon}</span>
+                {type.label}
+              </button>
+            ))}
           </div>
         </div>
+      </section>
 
-        {/* Reports List */}
-        <div className="space-y-4">
+      {/* Resultados */}
+      <section className="py-12 bg-black">
+        <div className="container mx-auto">
+          <div className="mb-8">
+            <p className="text-gray-400">
+              {reports?.total ? `Encontrados ${reports.total} relatórios` : "Nenhum relatório encontrado"}
+            </p>
+          </div>
+
           {isLoading ? (
             <div className="text-center py-12">
-              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-              <p className="text-slate-600 mt-4">Carregando relatórios...</p>
+              <p className="text-gray-400">Carregando relatórios...</p>
             </div>
-          ) : reportsData?.reports && reportsData.reports.length > 0 ? (
+          ) : reports?.reports && reports.reports.length > 0 ? (
             <>
-              {reportsData.reports.map((report) => (
-                <Card key={report.id} className="hover:shadow-lg transition-shadow cursor-pointer">
-                  <CardHeader>
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <FileText className="w-4 h-4 text-blue-600" />
-                          <span className="text-xs font-semibold text-blue-600 uppercase">
-                            {report.type === "diario_oficial" && "Diário Oficial"}
-                            {report.type === "plo" && "Projeto de Lei"}
-                            {report.type === "emenda" && "Emenda"}
-                            {report.type === "decreto" && "Decreto"}
-                            {report.type === "outro" && "Outro"}
-                          </span>
-                        </div>
-                        <CardTitle className="text-lg">{report.title}</CardTitle>
-                        <CardDescription className="flex items-center gap-2 mt-2">
-                          <Calendar className="w-4 h-4" />
-                          {new Date(report.publishedDate).toLocaleDateString("pt-BR")}
-                        </CardDescription>
-                      </div>
-                      <Button variant="outline" size="sm">Ver Detalhes</Button>
-                    </div>
-                  </CardHeader>
-                  {report.description && (
-                    <CardContent>
-                      <p className="text-slate-600 text-sm line-clamp-2">{report.description}</p>
-                    </CardContent>
-                  )}
-                  {report.summary && (
-                    <CardContent>
-                      <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mt-2">
-                        <p className="text-xs font-semibold text-blue-900 mb-1">Resumo IA</p>
-                        <p className="text-sm text-blue-800 line-clamp-2">{report.summary}</p>
-                      </div>
-                    </CardContent>
-                  )}
-                </Card>
-              ))}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {reports.reports.map((report) => (
+                  <Card
+                    key={report.id}
+                    className="bg-gray-900 border-gray-700 overflow-hidden hover:border-red-600 transition-all hover:shadow-lg hover:shadow-red-600/50 cursor-pointer group"
+                  >
+                    {/* Top Bar */}
+                    <div className="h-1 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600 group-hover:h-2 transition-all" />
 
-              {/* Pagination */}
-              <div className="flex items-center justify-between mt-8">
-                <p className="text-sm text-slate-600">
-                  Mostrando {(page - 1) * 20 + 1} a {Math.min(page * 20, reportsData.total)} de {reportsData.total} relatórios
-                </p>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    disabled={page === 1}
-                    onClick={() => setPage(page - 1)}
-                  >
-                    Anterior
-                  </Button>
-                  <Button
-                    variant="outline"
-                    disabled={page * 20 >= reportsData.total}
-                    onClick={() => setPage(page + 1)}
-                  >
-                    Próximo
-                  </Button>
+                    <div className="p-6">
+                      {/* Tipo e Data */}
+                      <div className="flex items-start justify-between mb-3">
+                        <span className="bg-red-600 text-white px-3 py-1 text-xs font-black rounded uppercase">
+                          {report.type}
+                        </span>
+                        <span className="text-gray-500 text-xs">
+                          {new Date(report.publishedDate).toLocaleDateString("pt-BR")}
+                        </span>
+                      </div>
+
+                      {/* Título */}
+                      <h3 className="text-lg font-black text-white mb-3 group-hover:text-yellow-400 transition-colors line-clamp-2">
+                        {report.title}
+                      </h3>
+
+                      {/* Descrição */}
+                      <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                        {report.description}
+                      </p>
+
+                      {/* Resumo (se gerado por LLM) */}
+                      {report.summary && (
+                        <div className="bg-gray-800 border-l-2 border-yellow-400 p-3 mb-4 text-xs text-gray-300 line-clamp-2">
+                          <p className="font-bold text-yellow-400 mb-1">Resumo:</p>
+                          {report.summary}
+                        </div>
+                      )}
+
+
+
+                      {/* CTA */}
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-bold"
+                      >
+                        Ler Relatório <ArrowRight className="ml-2 w-4 h-4" />
+                      </Button>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+
+              {/* Paginação */}
+              <div className="flex justify-center gap-4 mt-12">
+                <Button
+                  variant="outline"
+                  disabled={offset === 0}
+                  onClick={() => setOffset(Math.max(0, offset - limit))}
+                  className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                >
+                  ← Anterior
+                </Button>
+                <div className="flex items-center gap-2 text-gray-400">
+                  <span>Página {Math.floor(offset / limit) + 1}</span>
                 </div>
+                <Button
+                  variant="outline"
+                  disabled={!reports || reports.reports.length < limit}
+                  onClick={() => setOffset(offset + limit)}
+                  className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                >
+                  Próxima →
+                </Button>
               </div>
             </>
           ) : (
-            <Card>
-              <CardContent className="py-12 text-center">
-                <FileText className="w-12 h-12 text-slate-300 mx-auto mb-4" />
-                <p className="text-slate-600">Nenhum relatório encontrado</p>
-                <p className="text-sm text-slate-500 mt-2">Tente ajustar seus filtros de busca</p>
-              </CardContent>
-            </Card>
+            <div className="text-center py-12">
+              <FileText className="w-16 h-16 mx-auto text-gray-600 mb-4" />
+              <p className="text-gray-400 text-lg">Nenhum relatório encontrado com esses critérios</p>
+            </div>
           )}
         </div>
-      </div>
+      </section>
+
+      {/* CTA - Denúncia */}
+      <section className="py-12 bg-gradient-to-r from-red-600 to-red-800 border-t-4 border-yellow-400">
+        <div className="container mx-auto text-center">
+          <AlertTriangle className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
+          <h2 className="text-4xl font-black mb-4">ENCONTROU UMA IRREGULARIDADE?</h2>
+          <p className="text-xl mb-8">Denuncie gastos suspeitos e contratos irregulares</p>
+          <Button
+            size="lg"
+            className="bg-yellow-400 text-black font-bold hover:bg-yellow-300"
+            onClick={() => navigate("/complaints/new")}
+          >
+            Fazer Denúncia Agora
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 border-t border-gray-700 py-8">
+        <div className="container mx-auto text-center text-gray-400">
+          <p>Boca Aberta - Plataforma de Transparência e Auditoria Cidadã</p>
+        </div>
+      </footer>
     </div>
   );
 }
