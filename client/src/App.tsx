@@ -9,6 +9,7 @@ import ReportsPage from "./pages/ReportsPage";
 import ComplaintsPage from "./pages/ComplaintsPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import SubscribePage from "./pages/SubscribePage";
+import StatisticsPage from "./pages/StatisticsPage";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/reports"} component={ReportsPage} />
       <Route path={"/complaints/new"} component={ComplaintsPage} />
       <Route path={"/subscribe"} component={SubscribePage} />
+      <Route path={"/statistics"} component={StatisticsPage} />
       <Route path={"/admin"} component={AdminDashboard} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />

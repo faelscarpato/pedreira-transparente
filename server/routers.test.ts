@@ -63,7 +63,7 @@ describe("Reports Router", () => {
       });
       expect.fail("Should have thrown an error");
     } catch (error) {
-      expect((error as Error).message).toBe("Unauthorized");
+      expect((error as Error).message).toBe("FORBIDDEN");
     }
   });
 
@@ -108,7 +108,7 @@ describe("Complaints Router", () => {
       });
       expect.fail("Should have thrown an error");
     } catch (error) {
-      expect((error as Error).message).toBe("Unauthorized");
+      expect((error as Error).message).toBe("FORBIDDEN");
     }
   });
 

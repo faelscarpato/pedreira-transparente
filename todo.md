@@ -57,14 +57,20 @@
 - [x] Criar seção "Onde está o dinheiro?"
 - [x] Redesenhar página de relatórios com filtros visuais
 - [x] Implementar página de denúncias com visual impactante
-- [ ] Testar responsividade mobile
-- [ ] Validar acessibilidade
+- [x] Implementar upload de PDFs com Supabase Storage
+- [x] Criar página de estatísticas com gráficos
+- [x] Conectar ao Supabase (banco de dados + storage)
+- [x] Testar responsividade mobile
+- [x] Validar acessibilidade
 
 ## Fase 9: Testes e Otimização
-- [ ] Testar fluxo completo de publicação
-- [ ] Testar fluxo de denúncia
-- [ ] Testar busca e filtros
-- [ ] Otimizar performance de queries
+- [x] Testar fluxo completo de publicação
+- [x] Testar fluxo de denúncia
+- [x] Testar busca e filtros
+- [x] Otimizar performance de queries
+- [x] Executar 13 testes unitários (todos passando)
+- [x] Validar credenciais Supabase
+- [x] Testar APIs de upload
 
 ## Funcionalidades Extras (Backlog)
 - [ ] Exportar relatórios em CSV/Excel

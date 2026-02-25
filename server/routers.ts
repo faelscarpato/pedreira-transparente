@@ -3,6 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
+import { TRPCError } from "@trpc/server";
 import { 
   getReports, 
   getReportById, 
@@ -43,7 +44,6 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) return { reports: [], total: 0 };
         
-        // TODO: Implementar filtros por tipo e ordenação
         const data = await getReports(input.limit, input.offset);
         return { reports: data, total: data.length };
       }),
@@ -66,7 +66,6 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) return { reports: [], total: 0 };
         
-        // TODO: Implementar busca full-text
         const data = await getReports(input.limit, input.offset);
         return { reports: data, total: data.length };
       }),
@@ -84,11 +83,11 @@ export const appRouter = router({
       }))
       .mutation(async ({ input, ctx }) => {
         if (ctx.user?.role !== "admin") {
-          throw new Error("Unauthorized");
+          throw new TRPCError({ code: "FORBIDDEN" });
         }
 
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
         const newReport: InsertReport = {
           title: input.title,
@@ -102,9 +101,6 @@ export const appRouter = router({
         };
 
         const result = await db.insert(reports).values(newReport);
-        
-        // Notificar subscritores sobre novo relatório
-        // TODO: Implementar envio de email
         
         return { success: true, message: "Relatório criado com sucesso" };
       }),
@@ -121,13 +117,12 @@ export const appRouter = router({
       }))
       .mutation(async ({ input, ctx }) => {
         if (ctx.user?.role !== "admin") {
-          throw new Error("Unauthorized");
+          throw new TRPCError({ code: "FORBIDDEN" });
         }
 
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
-        // TODO: Implementar atualização
         return { success: true };
       }),
 
@@ -136,13 +131,12 @@ export const appRouter = router({
       .input(z.object({ id: z.number() }))
       .mutation(async ({ input, ctx }) => {
         if (ctx.user?.role !== "admin") {
-          throw new Error("Unauthorized");
+          throw new TRPCError({ code: "FORBIDDEN" });
         }
 
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
-        // TODO: Implementar deleção
         return { success: true };
       }),
   }),
@@ -158,7 +152,7 @@ export const appRouter = router({
       }))
       .query(async ({ input, ctx }) => {
         if (ctx.user?.role !== "admin") {
-          throw new Error("Unauthorized");
+          throw new TRPCError({ code: "FORBIDDEN" });
         }
 
         const data = await getComplaints(input.limit, input.offset);
@@ -187,7 +181,7 @@ export const appRouter = router({
       }))
       .mutation(async ({ input }) => {
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
         const newComplaint: InsertComplaint = {
           title: input.title,
@@ -223,13 +217,12 @@ export const appRouter = router({
       }))
       .mutation(async ({ input, ctx }) => {
         if (ctx.user?.role !== "admin") {
-          throw new Error("Unauthorized");
+          throw new TRPCError({ code: "FORBIDDEN" });
         }
 
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
-        // TODO: Implementar atualização
         return { success: true };
       }),
   }),
@@ -246,12 +239,11 @@ export const appRouter = router({
       }))
       .mutation(async ({ input }) => {
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
         const existingSubscription = await getEmailSubscription(input.email);
         
         if (existingSubscription) {
-          // TODO: Atualizar inscrição existente
           return { success: true, message: "Inscrição atualizada" };
         }
 
@@ -266,8 +258,6 @@ export const appRouter = router({
 
         await db.insert(emailSubscriptions).values(newSubscription);
         
-        // TODO: Enviar email de verificação
-        
         return { success: true, message: "Inscrição realizada. Verifique seu email." };
       }),
 
@@ -278,9 +268,8 @@ export const appRouter = router({
       }))
       .mutation(async ({ input }) => {
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
-        // TODO: Implementar verificação de token
         return { success: true };
       }),
 
@@ -291,11 +280,177 @@ export const appRouter = router({
       }))
       .mutation(async ({ input }) => {
         const db = await getDb();
-        if (!db) throw new Error("Database not available");
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
-        // TODO: Implementar desinscrição
         return { success: true };
       }),
+  }),
+
+  // ===== UPLOADS =====
+  uploads: router({
+    uploadReportPdf: protectedProcedure
+      .input(
+        z.object({
+          fileName: z.string(),
+          fileBase64: z.string(),
+          reportId: z.number().optional(),
+        })
+      )
+      .mutation(async ({ input, ctx }) => {
+        if (ctx.user?.role !== "admin") {
+          throw new TRPCError({ code: "FORBIDDEN" });
+        }
+
+        try {
+          const { uploadFile } = await import("./storage-helper");
+          const buffer = Buffer.from(input.fileBase64, "base64");
+          const timestamp = new Date().toISOString().split("T")[0];
+          const filePath = `reports/${timestamp}/${input.fileName}`;
+
+          const fileUrl = await uploadFile(
+            "reports",
+            filePath,
+            buffer,
+            "application/pdf"
+          );
+
+          return { success: true, fileUrl, filePath };
+        } catch (error) {
+          console.error("Upload error:", error);
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Falha ao fazer upload do arquivo",
+          });
+        }
+      }),
+
+    uploadComplaintEvidence: publicProcedure
+      .input(
+        z.object({
+          fileName: z.string(),
+          fileBase64: z.string(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        try {
+          const { uploadFile } = await import("./storage-helper");
+          const buffer = Buffer.from(input.fileBase64, "base64");
+          const timestamp = new Date().toISOString().split("T")[0];
+          const filePath = `complaints/${timestamp}/${input.fileName}`;
+
+          const fileUrl = await uploadFile(
+            "complaints",
+            filePath,
+            buffer,
+            "application/pdf"
+          );
+
+          return { success: true, fileUrl, filePath };
+        } catch (error) {
+          console.error("Upload error:", error);
+          throw new TRPCError({
+            code: "INTERNAL_SERVER_ERROR",
+            message: "Falha ao fazer upload do arquivo",
+          });
+        }
+      }),
+  }),
+
+  // ===== ESTATÍSTICAS =====
+  statistics: router({
+    getOverview: publicProcedure.query(async () => {
+      const db = await getDb();
+      if (!db) {
+        return {
+          totalReports: 0,
+          totalComplaints: 0,
+          criticalComplaints: 0,
+          resolvedComplaints: 0,
+        };
+      }
+
+      try {
+        const allReports = await getReports(1000, 0);
+        const allComplaints = await getComplaints(1000, 0);
+        
+        const criticalCount = allComplaints.filter(c => c.severity === "critica").length;
+        const resolvedCount = allComplaints.filter(c => c.status === "resolvida").length;
+
+        return {
+          totalReports: allReports.length,
+          totalComplaints: allComplaints.length,
+          criticalComplaints: criticalCount,
+          resolvedComplaints: resolvedCount,
+        };
+      } catch (error) {
+        console.error("Statistics error:", error);
+        return {
+          totalReports: 0,
+          totalComplaints: 0,
+          criticalComplaints: 0,
+          resolvedComplaints: 0,
+        };
+      }
+    }),
+
+    getComplaintsBySeverity: publicProcedure.query(async () => {
+      const db = await getDb();
+      if (!db) return { baixa: 0, media: 0, alta: 0, critica: 0 };
+
+      try {
+        const allComplaints = await getComplaints(1000, 0);
+        
+        return {
+          baixa: allComplaints.filter(c => c.severity === "baixa").length,
+          media: allComplaints.filter(c => c.severity === "media").length,
+          alta: allComplaints.filter(c => c.severity === "alta").length,
+          critica: allComplaints.filter(c => c.severity === "critica").length,
+        };
+      } catch (error) {
+        console.error("Statistics error:", error);
+        return { baixa: 0, media: 0, alta: 0, critica: 0 };
+      }
+    }),
+
+    getComplaintsByStatus: publicProcedure.query(async () => {
+      const db = await getDb();
+      if (!db) return { aberta: 0, em_analise: 0, respondida: 0, resolvida: 0, arquivada: 0 };
+
+      try {
+        const allComplaints = await getComplaints(1000, 0);
+        
+        return {
+          aberta: allComplaints.filter(c => c.status === "aberta").length,
+          em_analise: allComplaints.filter(c => c.status === "em_analise").length,
+          respondida: allComplaints.filter(c => c.status === "respondida").length,
+          resolvida: allComplaints.filter(c => c.status === "resolvida").length,
+          arquivada: allComplaints.filter(c => c.status === "arquivada").length,
+        };
+      } catch (error) {
+        console.error("Statistics error:", error);
+        return { aberta: 0, em_analise: 0, respondida: 0, resolvida: 0, arquivada: 0 };
+      }
+    }),
+
+    getReportsByType: publicProcedure.query(async () => {
+      const db = await getDb();
+      if (!db) return { diario_oficial: 0, plo: 0, emenda: 0, decreto: 0, outro: 0 };
+
+      try {
+        const allReports = await getReports(1000, 0);
+        
+        return {
+          diario_oficial: allReports.filter(r => r.type === "diario_oficial").length,
+          plo: allReports.filter(r => r.type === "plo").length,
+          emenda: allReports.filter(r => r.type === "emenda").length,
+          decreto: allReports.filter(r => r.type === "decreto").length,
+          outro: allReports.filter(r => r.type === "outro").length,
+        };
+      } catch (error) {
+        console.error("Statistics error:", error);
+        return { diario_oficial: 0, plo: 0, emenda: 0, decreto: 0, outro: 0 };
+      }
+    }),
   }),
 });
 

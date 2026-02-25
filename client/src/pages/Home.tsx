@@ -26,6 +26,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-2">
+              <Button variant="outline" size="sm" onClick={() => navigate("/statistics")}>
+                Estatísticas
+              </Button>
               <Button variant="outline" size="sm" onClick={() => navigate("/reports")}>
                 Relatórios
               </Button>
