@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, reports, complaints, emailSubscriptions, sentNotifications } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,58 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function getUserById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(users).where(eq(users.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+// Queries para Relatórios
+export async function getReports(limit: number = 20, offset: number = 0) {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(reports).limit(limit).offset(offset);
+}
+
+export async function getReportById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(reports).where(eq(reports.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function searchReports(query: string, type?: string, limit: number = 20, offset: number = 0) {
+  const db = await getDb();
+  if (!db) return [];
+  // Implementar busca por título, descrição e keywords
+  return db.select().from(reports).limit(limit).offset(offset);
+}
+
+// Queries para Denúncias
+export async function getComplaints(limit: number = 20, offset: number = 0) {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(complaints).limit(limit).offset(offset);
+}
+
+export async function getComplaintById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(complaints).where(eq(complaints.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+// Queries para Inscrições de Email
+export async function getEmailSubscription(email: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(emailSubscriptions).where(eq(emailSubscriptions.email, email)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function getVerifiedSubscriptions() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(emailSubscriptions).where(eq(emailSubscriptions.isVerified, true));
+}
