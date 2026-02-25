@@ -56,7 +56,7 @@
 - [x] Criar seção "Destaques do Dia"
 - [x] Criar seção "Onde está o dinheiro?"
 - [x] Redesenhar página de relatórios com filtros visuais
-- [ ] Implementar cards de denúncias com visual impactante
+- [x] Implementar página de denúncias com visual impactante
 - [ ] Testar responsividade mobile
 - [ ] Validar acessibilidade
 
