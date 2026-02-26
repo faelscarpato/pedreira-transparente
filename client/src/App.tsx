@@ -10,6 +10,7 @@ import ComplaintsPage from "./pages/ComplaintsPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import SubscribePage from "./pages/SubscribePage";
 import StatisticsPage from "./pages/StatisticsPage";
+import ComplaintTrackingPage from "./pages/ComplaintTrackingPage";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/complaints/new"} component={ComplaintsPage} />
       <Route path={"/subscribe"} component={SubscribePage} />
       <Route path={"/statistics"} component={StatisticsPage} />
+      <Route path={"/track"} component={ComplaintTrackingPage} />
       <Route path={"/admin"} component={AdminDashboard} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />

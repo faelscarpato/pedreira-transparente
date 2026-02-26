@@ -1,0 +1,1 @@
+ALTER TABLE `complaints` MODIFY COLUMN `protocolNumber` varchar(100) NOT NULL;

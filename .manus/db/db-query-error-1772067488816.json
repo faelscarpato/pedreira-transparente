@@ -1,0 +1,8 @@
+{
+  "query": "CREATE INDEX `ft_reports_search` ON `reports` (`title`, `description`, `keywords`);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Ri49ZUGNc5rC4p.root --database 9uvXbysPrnotsxZPFePU2x --execute CREATE INDEX `ft_reports_search` ON `reports` (`title`, `description`, `keywords`);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1170 (42000) at line 1: BLOB/TEXT column 'description' used in key specification without a key length"
+  ]
+}

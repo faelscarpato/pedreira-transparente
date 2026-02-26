@@ -1,0 +1,9 @@
+{
+  "query": "TRUNCATE TABLE `complaints`;\nALTER TABLE `complaints` MODIFY COLUMN `protocolNumber` varchar(100) NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Ri49ZUGNc5rC4p.root --database 9uvXbysPrnotsxZPFePU2x --execute TRUNCATE TABLE `complaints`;\nALTER TABLE `complaints` MODIFY COLUMN `protocolNumber` varchar(100) NOT NULL;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 313
+}

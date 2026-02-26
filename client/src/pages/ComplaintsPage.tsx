@@ -32,10 +32,12 @@ const severityConfig = {
 export default function ComplaintsPage() {
   const [, navigate] = useLocation();
   const [submitted, setSubmitted] = useState(false);
+  const [protocolNumber, setProtocolNumber] = useState("");
   const [selectedSeverity, setSelectedSeverity] = useState<"baixa" | "media" | "alta" | "critica">("media");
 
   const createComplaint = trpc.complaints.create.useMutation({
-    onSuccess: () => {
+    onSuccess: (data) => {
+      setProtocolNumber(data.protocolNumber);
       setSubmitted(true);
       toast.success("Denúncia registrada com sucesso!");
       reset();
@@ -93,17 +95,25 @@ export default function ComplaintsPage() {
             </p>
             <div className="bg-black bg-opacity-50 rounded p-4 mb-6">
               <p className="text-sm text-gray-300 mb-2">Número de Protocolo</p>
-              <p className="text-2xl font-black text-yellow-400">#2026-{Math.random().toString().slice(2, 6)}</p>
+              <p className="text-2xl font-black text-yellow-400">{protocolNumber}</p>
             </div>
             <p className="text-sm text-gray-200 mb-6">
               Guarde este número para acompanhar sua denúncia.
             </p>
-            <Button
-              onClick={() => navigate("/")}
-              className="w-full bg-yellow-400 text-black font-bold hover:bg-yellow-300 text-lg py-6"
-            >
-              Voltar à Página Inicial
-            </Button>
+            <div className="flex gap-3">
+              <Button
+                onClick={() => navigate("/track")}
+                className="flex-1 bg-blue-600 text-white font-bold hover:bg-blue-700 text-lg py-6"
+              >
+                Rastrear Denúncia
+              </Button>
+              <Button
+                onClick={() => navigate("/")}
+                className="flex-1 bg-yellow-400 text-black font-bold hover:bg-yellow-300 text-lg py-6"
+              >
+                Voltar
+              </Button>
+            </div>
           </div>
         </div>
       </div>

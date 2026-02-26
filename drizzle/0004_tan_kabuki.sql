@@ -1,0 +1,1 @@
+CREATE INDEX `ft_reports_search` ON `reports` (`title`,`description`,`keywords`);

@@ -16,6 +16,8 @@ import {
 } from "./db";
 import { reports, complaints, emailSubscriptions, InsertReport, InsertComplaint, InsertEmailSubscription } from "../drizzle/schema";
 import { notifyOwner } from "./_core/notification";
+import { eq, or, and, desc, like } from "drizzle-orm";
+import { notifyNewReport, notifyCriticalComplaint, notifyComplaintUpdate } from "./email-notifier";
 
 export const appRouter = router({
   system: systemRouter,
@@ -99,11 +101,21 @@ export const appRouter = router({
           keywords: input.keywords,
           createdBy: ctx.user.id,
         };
-
         const result = await db.insert(reports).values(newReport);
         
-        return { success: true, message: "Relatório criado com sucesso" };
-      }),
+        // Notificar inscritos sobre novo relatório
+        const subscribers = await getVerifiedSubscriptions();
+        if (subscribers.length > 0) {
+          const subscriberEmails = subscribers
+            .filter(s => s.subscribeToNewReports)
+            .map(s => s.email);
+          
+          if (subscriberEmails.length > 0) {
+            await notifyNewReport(input.title, input.type, subscriberEmails);
+          }
+        }
+        
+        return { success: true, message: "Relatório publicado com sucesso" };     }),
 
     // Atualizar relatório (admin only)
     update: protectedProcedure
@@ -183,7 +195,11 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
+        // Gerar número de protocolo único
+        const protocolNumber = `DENUNCIA-${Date.now()}-${Math.random().toString(36).substring(2, 9).toUpperCase()}`;
+
         const newComplaint: InsertComplaint = {
+          protocolNumber,
           title: input.title,
           description: input.description,
           severity: input.severity,
@@ -205,7 +221,51 @@ export const appRouter = router({
           });
         }
         
-        return { success: true, message: "Denúncia registrada com sucesso" };
+        return { success: true, message: "Denúncia registrada com sucesso", protocolNumber };
+      }),
+
+    // Busca full-text em relatórios
+    search: publicProcedure
+      .input(z.object({
+        query: z.string().min(2, "Busca deve ter pelo menos 2 caracteres"),
+        type: z.enum(["diario_oficial", "plo", "emenda", "decreto", "outro"]).optional(),
+        page: z.number().default(1),
+        limit: z.number().default(10),
+      }))
+      .query(async ({ input }) => {
+        const db = await getDb();
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
+
+        const offset = (input.page - 1) * input.limit;
+        const whereConditions = [];
+
+        // Busca por palavra-chave
+        whereConditions.push(
+          or(
+            like(reports.title, `%${input.query}%`),
+            like(reports.keywords, `%${input.query}%`)
+          )
+        );
+
+        // Filtro por tipo
+        if (input.type) {
+          whereConditions.push(eq(reports.type, input.type));
+        }
+
+        const results = await db
+          .select()
+          .from(reports)
+          .where(and(...whereConditions))
+          .orderBy(desc(reports.publishedDate))
+          .limit(input.limit)
+          .offset(offset);
+
+        return {
+          reports: results,
+          page: input.page,
+          limit: input.limit,
+          total: results.length,
+        };
       }),
 
     // Atualizar denúncia (admin only)
@@ -223,6 +283,28 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
 
+        // Obter dados da denúncia antes de atualizar
+        const complaint = await getComplaintById(input.id);
+        if (!complaint) {
+          throw new TRPCError({ code: "NOT_FOUND" });
+        }
+
+        const updateData: any = {};
+        if (input.status) updateData.status = input.status;
+        if (input.adminNotes) updateData.adminNotes = input.adminNotes;
+
+        await db.update(complaints).set(updateData).where(eq(complaints.id, input.id));
+        
+        // Notificar denunciante sobre atualização
+        if (input.status && complaint.reporterEmail) {
+          await notifyComplaintUpdate(
+            complaint.title,
+            input.status,
+            complaint.protocolNumber,
+            complaint.reporterEmail
+          );
+        }
+        
         return { success: true };
       }),
   }),

@@ -15,6 +15,27 @@
       "when": 1772019198994,
       "tag": "0001_powerful_reaper",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1772067319532,
+      "tag": "0002_motionless_lord_hawal",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1772067434865,
+      "tag": "0003_clever_wallop",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1772067485499,
+      "tag": "0004_tan_kabuki",
+      "breakpoints": true
     }
   ]
 }

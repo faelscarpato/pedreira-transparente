@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE `complaints` ADD `protocolNumber` varchar(20) NOT NULL DEFAULT CONCAT('DENUNCIA-', DATE_FORMAT(NOW(), '%Y%m%d%H%i%s'));\nALTER TABLE `complaints` ADD CONSTRAINT `complaints_protocolNumber_unique` UNIQUE(`protocolNumber`);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Ri49ZUGNc5rC4p.root --database 9uvXbysPrnotsxZPFePU2x --execute ALTER TABLE `complaints` ADD `protocolNumber` varchar(20) NOT NULL DEFAULT CONCAT('DENUNCIA-', DATE_FORMAT(NOW(), '%Y%m%d%H%i%s'));\nALTER TABLE `complaints` ADD CONSTRAINT `complaints_protocolNumber_unique` UNIQUE(`protocolNumber`);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 3770 (HY000) at line 1: Default value expression of column 'protocolNumber' contains a disallowed function: `CONCAT`."
+  ]
+}

@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, boolean, decimal, longtext } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, boolean, decimal, longtext, index } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -40,7 +40,9 @@ export const reports = mysqlTable("reports", {
   createdBy: int("createdBy").notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
-});
+}, (table) => ({
+  fullTextIndex: index("ft_reports_search").on(table.title, table.description, table.keywords),
+}));
 
 export type Report = typeof reports.$inferSelect;
 export type InsertReport = typeof reports.$inferInsert;
@@ -48,6 +50,7 @@ export type InsertReport = typeof reports.$inferInsert;
 // Tabela de Denúncias Cidadãs
 export const complaints = mysqlTable("complaints", {
   id: int("id").autoincrement().primaryKey(),
+  protocolNumber: varchar("protocolNumber", { length: 100 }).notNull().unique(),
   title: varchar("title", { length: 255 }).notNull(),
   description: longtext("description").notNull(),
   severity: mysqlEnum("severity", ["baixa", "media", "alta", "critica"]).default("media").notNull(),
