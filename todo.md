@@ -113,3 +113,15 @@
 - [ ] Integração com SMTP real (SendGrid/AWS SES)
 - [ ] Sistema de autenticação de dois fatores
 - [ ] Dashboard de denúncias para cidadãos
+
+
+## Fase 11: Otimizações de SEO
+- [x] Adicionar meta tags de descrição (50-160 caracteres)
+- [x] Adicionar meta tags de palavras-chave
+- [x] Adicionar meta tags Open Graph (redes sociais)
+- [x] Adicionar meta tags Twitter Card
+- [x] Adicionar estrutura semântica HTML (h1, h2, article, time, footer)
+- [x] Adicionar atributos ARIA para acessibilidade
+- [x] Adicionar canonical URL
+- [x] Otimizar título da página
+- [x] Integrar Google Fonts

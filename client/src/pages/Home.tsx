@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header do Jornal */}
-      <header className="border-b-4 border-red-600 bg-black py-6">
+      <header className="border-b-4 border-red-600 bg-black py-6" role="banner">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-4">
-              <div className="text-4xl font-black">
+              <h1 className="text-4xl font-black">
                 <span className="text-red-600">BOCA</span>
                 <span className="text-white ml-2">ABERTA</span>
-              </div>
+              </h1>
               <div className="hidden md:block border-l-4 border-yellow-400 pl-4">
                 <p className="text-yellow-400 font-bold text-sm">O DESTINO DO SEU DINHEIRO NA CARA!</p>
               </div>
@@ -55,11 +55,11 @@ export default function Home() {
       </header>
 
       {/* Manchete Principal */}
-      <section className="bg-gradient-to-r from-red-600 to-red-800 py-12 border-b-4 border-yellow-400">
+      <section className="bg-gradient-to-r from-red-600 to-red-800 py-12 border-b-4 border-yellow-400" role="main">
         <div className="container mx-auto">
-          <h1 className="main-headline mb-4">
+          <h2 className="main-headline mb-4">
             FISCALIZE O EXECUTIVO E O LEGISLATIVO
-          </h1>
+          </h2>
           <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl">
             Acesse relatórios de auditoria, projetos de lei e denúncias de forma clara e acessível. 
             Cobre o governo com informações confiáveis e verificadas.
@@ -85,13 +85,13 @@ export default function Home() {
       </section>
 
       {/* Destaques do Dia */}
-      <section className="py-12 bg-black border-b-4 border-red-600">
+      <section className="py-12 bg-black border-b-4 border-red-600" aria-labelledby="destaques-heading">
         <div className="container mx-auto">
-          <div className="section-header mb-8">DESTAQUES DO DIA</div>
+          <h2 id="destaques-heading" className="section-header mb-8">DESTAQUES DO DIA</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="investigation-card">
+            <article className="investigation-card">
               <div className="mb-4">
                 <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">GASTOS</span>
               </div>
@@ -100,10 +100,10 @@ export default function Home() {
               <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
                 Saiba Mais
               </Button>
-            </div>
+            </article>
 
             {/* Card 2 */}
-            <div className="investigation-card">
+            <article className="investigation-card">
               <div className="mb-4">
                 <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">LICITAÇÃO</span>
               </div>
@@ -112,10 +112,10 @@ export default function Home() {
               <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
                 Analise o Caso
               </Button>
-            </div>
+            </article>
 
             {/* Card 3 */}
-            <div className="investigation-card">
+            <article className="investigation-card">
               <div className="mb-4">
                 <span className="bg-red-600 text-white px-3 py-1 text-xs font-bold rounded">OBRAS</span>
               </div>
@@ -124,15 +124,15 @@ export default function Home() {
               <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
                 Ver Reportagem
               </Button>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       {/* Onde está o dinheiro? */}
-      <section className="py-12 bg-gray-900 border-b-4 border-yellow-400">
+      <section className="py-12 bg-gray-900 border-b-4 border-yellow-400" aria-labelledby="dinheiro-heading">
         <div className="container mx-auto">
-          <div className="section-header mb-8">ONDE ESTÁ O DINHEIRO?</div>
+          <h2 id="dinheiro-heading" className="section-header mb-8">ONDE ESTÁ O DINHEIRO?</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Receitas */}
@@ -159,29 +159,29 @@ export default function Home() {
       </section>
 
       {/* Relatórios Recentes */}
-      <section className="py-12 bg-black border-b-4 border-red-600">
+      <section className="py-12 bg-black border-b-4 border-red--600" aria-labelledby="relatorios-heading">
         <div className="container mx-auto">
-          <div className="section-header mb-8">RELATÓRIOS RECENTES</div>
+          <h2 id="relatorios-heading" className="section-header mb-8">RELATÓRIOS RECENTES</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             {reports?.reports?.slice(0, 4).map((report) => (
-              <Card key={report.id} className="bg-gray-900 border-gray-700 p-6 hover:border-red-600 transition-colors">
+              <article key={report.id} className="bg-gray-900 border border-gray-700 p-6 hover:border-red-600 transition-colors rounded">
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <span className="bg-red-600 text-white px-2 py-1 text-xs font-bold rounded">
                       {report.type.toUpperCase()}
                     </span>
                   </div>
-                  <span className="text-gray-500 text-sm">
+                  <time className="text-gray-500 text-sm">
                     {new Date(report.publishedDate).toLocaleDateString("pt-BR")}
-                  </span>
+                  </time>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{report.title}</h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-2">{report.description}</p>
                 <Button variant="outline" size="sm" className="border-yellow-400 text-yellow-400">
                   Ler Relatório
                 </Button>
-              </Card>
+              </article>
             ))}
           </div>
 
@@ -198,10 +198,10 @@ export default function Home() {
       </section>
 
       {/* CTA - Denúncias */}
-      <section className="py-12 bg-gradient-to-r from-red-600 to-red-800 border-b-4 border-yellow-400">
+      <section className="py-12 bg-gradient-to-r from-red-600 to-red-800 border-b-4 border-yellow-400" aria-labelledby="denuncia-heading">
         <div className="container mx-auto text-center">
-          <AlertTriangle className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
-          <h2 className="text-4xl font-black mb-4">ENCONTROU UMA IRREGULARIDADE?</h2>
+          <AlertTriangle className="w-16 h-16 mx-auto mb-4 text-yellow-400" aria-hidden="true" />
+          <h2 id="denuncia-heading" className="text-4xl font-black mb-4">ENCONTROU UMA IRREGULARIDADE?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Denuncie gastos suspeitos, contratos irregulares e obras paradas. 
             Suas denúncias são analisadas e publicadas com segurança.
@@ -217,10 +217,10 @@ export default function Home() {
       </section>
 
       {/* CTA - Inscrição */}
-      <section className="py-12 bg-black border-b-4 border-red-600">
+      <section className="py-12 bg-black border-b-4 border-red-600" aria-labelledby="notif-heading">
         <div className="container mx-auto text-center">
-          <FileText className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
-          <h2 className="text-4xl font-black mb-4">RECEBA NOTIFICAÇÕES</h2>
+          <FileText className="w-16 h-16 mx-auto mb-4 text-yellow-400" aria-hidden="true" />
+          <h2 id="notif-heading" className="text-4xl font-black mb-4">RECEBA NOTIFICAÇÕES</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Seja notificado quando novos relatórios forem publicados e quando denúncias críticas forem registradas.
           </p>
@@ -235,10 +235,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-700 py-8">
+      <footer className="bg-gray-900 border-t border-gray-700 py-8" role="contentinfo">
         <div className="container mx-auto text-center text-gray-400">
-          <p className="mb-4">Boca Aberta - Plataforma de Transparência e Auditoria Cidadã</p>
-          <p className="text-sm">Desenvolvido para fiscalizar o executivo e o legislativo municipal</p>
+          <p className="mb-4"><strong>Boca Aberta</strong> - Plataforma de Transparência e Auditoria Cidadã</p>
+          <p className="text-sm">Desenvolvido para fiscalizar o executivo e o legislativo municipal. Acesse relatórios de auditoria, projetos de lei, denúncias e estatísticas de conformidade.</p>
           <p className="text-xs mt-4">© 2026 - Todos os direitos reservados</p>
         </div>
       </footer>
