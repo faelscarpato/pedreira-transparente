@@ -134,24 +134,11 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -162,45 +149,52 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
 
-/* ===== ESTILOS DO JORNAL BOCA ABERTA ===== */
+/* ===== ESTILOS DO JORNAL BOCA ABERTA - MOBILE FIRST ===== */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap");
 
-/* Tipografia */
+/* Tipografia - Mobile First */
 .font-headline {
-  @apply font-black text-4xl md:text-5xl lg:text-6xl tracking-tight;
+  @apply font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight;
   font-family: "Bebas Neue", sans-serif;
 }
 
 .font-subheadline {
-  @apply font-bold text-2xl md:text-3xl tracking-wide;
+  @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-wide;
   font-family: "Bebas Neue", sans-serif;
 }
 
 .main-headline {
-  @apply text-5xl md:text-6xl lg:text-7xl font-black text-white drop-shadow-lg;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white drop-shadow-lg;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 2px;
-  text-shadow: 3px 3px 0px rgb(220, 38, 38), 6px 6px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px rgb(220, 38, 38), 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* Cards de Investigação */
+@media (min-width: 768px) {
+  .main-headline {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px rgb(220, 38, 38), 4px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Cards de Investigação - Mobile First */
 .investigation-card {
-  @apply relative overflow-hidden rounded-lg border-2 border-red-600 bg-black p-6 text-white shadow-lg transition-transform hover:scale-105;
+  @apply relative overflow-hidden rounded-lg border-2 border-red-600 bg-black p-3 sm:p-4 md:p-5 lg:p-6 text-white shadow-lg transition-transform hover:scale-105;
 }
 
 .investigation-card::before {
@@ -208,39 +202,51 @@
   @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600;
 }
 
+.investigation-card h3 {
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2;
+}
+
+.investigation-card p {
+  @apply text-xs sm:text-sm md:text-base leading-relaxed;
+}
+
+.investigation-card time {
+  @apply text-xs sm:text-sm text-gray-400;
+}
+
 /* Faixas de Cor */
 .stripe-yellow {
-  @apply relative border-t-4 border-b-4 border-yellow-400 py-2;
+  @apply relative border-t-4 border-b-4 border-yellow-400 py-2 px-3 sm:px-4;
 }
 
 .stripe-red {
-  @apply relative border-t-4 border-b-4 border-red-600 py-2;
+  @apply relative border-t-4 border-b-4 border-red-600 py-2 px-3 sm:px-4;
 }
 
 /* Cabeçalho de Seção */
 .section-header {
-  @apply relative border-b-4 border-red-600 pb-3 text-3xl font-black text-black dark:text-white;
+  @apply relative border-b-4 border-red-600 pb-2 sm:pb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-black dark:text-white;
   background: linear-gradient(90deg, rgb(250, 204, 21) 0%, transparent 100%);
-  padding-left: 1rem;
+  padding-left: 0.75rem;
 }
 
 /* Números em Destaque */
 .big-number {
-  @apply text-4xl md:text-5xl lg:text-6xl font-black text-red-600;
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-red-600;
 }
 
 .currency-highlight {
-  @apply text-3xl md:text-4xl font-black text-yellow-400;
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-yellow-400;
 }
 
 /* Caixa de Destaque */
 .highlight-box {
-  @apply relative border-l-4 border-red-600 bg-yellow-50 p-4 dark:bg-gray-900;
+  @apply relative border-l-4 border-red-600 bg-yellow-50 p-3 sm:p-4 md:p-5 dark:bg-gray-900;
 }
 
 .highlight-box::before {
   content: "!";
-  @apply absolute -left-3 -top-2 text-3xl font-black text-red-600;
+  @apply absolute -left-3 -top-2 text-2xl sm:text-3xl font-black text-red-600;
 }
 
 /* Efeito de Splatter */
@@ -274,17 +280,66 @@
   @apply bg-yellow-400;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .font-headline {
-    @apply text-2xl md:text-3xl;
+/* Espaçamento Responsivo */
+.section-spacing {
+  @apply py-6 sm:py-8 md:py-10 lg:py-12;
+}
+
+.card-spacing {
+  @apply mb-3 sm:mb-4 md:mb-5 lg:mb-6;
+}
+
+/* Grid Responsivo */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6;
+}
+
+/* Flex Responsivo */
+.flex-responsive {
+  @apply flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6;
+}
+
+/* Padding Responsivo */
+.px-responsive {
+  @apply px-3 sm:px-4 md:px-6 lg:px-8;
+}
+
+.py-responsive {
+  @apply py-4 sm:py-5 md:py-6 lg:py-8;
+}
+
+/* Header Responsivo */
+.header-responsive {
+  @apply py-3 sm:py-4 md:py-5 lg:py-6 border-b-4 border-red-600;
+}
+
+/* Form Responsivo */
+@layer components {
+  .form-input-responsive {
+    @apply w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border-2 border-gray-300 focus:border-red-600 focus:outline-none text-sm sm:text-base;
   }
 
-  .main-headline {
-    @apply text-3xl md:text-4xl;
+  .form-label-responsive {
+    @apply block text-sm sm:text-base font-semibold mb-1 sm:mb-2 text-gray-700 dark:text-gray-300;
+  }
+}
+
+/* Button Responsivo */
+@layer components {
+  .btn-primary-responsive {
+    @apply px-4 sm:px-5 md:px-6 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all bg-red-600 text-white hover:bg-red-700 active:scale-95;
   }
 
-  .big-number {
-    @apply text-2xl md:text-3xl;
+  .btn-secondary-responsive {
+    @apply px-4 sm:px-5 md:px-6 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all bg-yellow-400 text-black hover:bg-yellow-500 active:scale-95;
   }
+}
+
+/* Navigation Responsivo */
+.nav-responsive {
+  @apply flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4;
+}
+
+.nav-item-responsive {
+  @apply px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
 }

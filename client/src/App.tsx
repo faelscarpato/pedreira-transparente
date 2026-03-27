@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ReportsPage from "./pages/ReportsPage";
 import ComplaintsPage from "./pages/ComplaintsPage";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminManagementPage from "./pages/AdminManagementPage";
 import SubscribePage from "./pages/SubscribePage";
 import StatisticsPage from "./pages/StatisticsPage";
 import ComplaintTrackingPage from "./pages/ComplaintTrackingPage";
@@ -22,6 +23,7 @@ function Router() {
       <Route path={"/statistics"} component={StatisticsPage} />
       <Route path={"/track"} component={ComplaintTrackingPage} />
       <Route path={"/admin"} component={AdminDashboard} />
+      <Route path={"/admin-management"} component={AdminManagementPage} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
