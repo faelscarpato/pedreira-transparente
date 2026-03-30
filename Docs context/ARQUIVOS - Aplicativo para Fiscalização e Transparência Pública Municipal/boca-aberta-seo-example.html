@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  
+  <!-- ===== TÍTULO E DESCRIÇÃO ===== -->
+  <title>Boca Aberta - Transparência Municipal e Auditoria Cidadã</title>
+  
+  <!-- ===== SEO META TAGS ===== -->
+  <meta name="description" content="Plataforma de transparência pública municipal. Consulte relatórios de auditoria, denuncie irregularidades e acompanhe o destino do dinheiro público com Boca Aberta." />
+  <meta name="keywords" content="transparência pública, auditoria municipal, denúncias, fiscalização, governo, Pedreira, orçamento público, diário oficial" />
+  <meta name="author" content="Boca Aberta" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Portuguese" />
+  
+  <!-- ===== OPEN GRAPH (FACEBOOK, LINKEDIN) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Boca Aberta - Transparência Municipal" />
+  <meta property="og:description" content="Fiscalize o executivo e legislativo. Consulte relatórios de auditoria e denuncie irregularidades públicas." />
+  <meta property="og:url" content="https://bocaaberta.manus.space" />
+  <meta property="og:site_name" content="Boca Aberta" />
+  <meta property="og:image" content="https://bocaaberta.manus.space/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Boca Aberta - Transparência Municipal" />
+  <meta name="twitter:description" content="O destino do seu dinheiro na cara! Consulte relatórios de auditoria e denuncie irregularidades." />
+  <meta name="twitter:image" content="https://bocaaberta.manus.space/twitter-image.png" />
+  <meta name="twitter:creator" content="@bocaaberta" />
+  
+  <!-- ===== ADDITIONAL SEO ===== -->
+  <meta name="theme-color" content="#DC2626" />
+  <link rel="canonical" href="https://bocaaberta.manus.space" />
+  
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- ===== STRUCTURED DATA (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Boca Aberta",
+    "description": "Plataforma de transparência pública municipal e auditoria cidadã",
+    "url": "https://bocaaberta.manus.space",
+    "applicationCategory": "Civic Technology",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Boca Aberta",
+      "url": "https://bocaaberta.manus.space"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://bocaaberta.manus.space/reports?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      border-bottom: 4px solid #dc2626;
+      padding: 24px 0;
+      background: #000;
+    }
+    
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      margin: 32px 0 16px;
+      color: #fbbf24;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      margin: 16px 0 8px;
+    }
+    
+    main {
+      padding: 48px 0;
+    }
+    
+    section {
+      margin-bottom: 48px;
+      padding: 32px 0;
+      border-bottom: 2px solid #dc2626;
+    }
+    
+    article {
+      background: #111;
+      padding: 24px;
+      margin-bottom: 16px;
+      border-left: 4px solid #dc2626;
+    }
+    
+    time {
+      display: block;
+      color: #999;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    
+    footer {
+      background: #111;
+      padding: 32px 0;
+      text-align: center;
+      border-top: 2px solid #dc2626;
+      color: #999;
+    }
+    
+    .highlight {
+      color: #fbbf24;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER COM ROLE="BANNER" ===== -->
+  <header role="banner">
+    <div class="container">
+      <h1>
+        <span style="color: #dc2626;">BOCA</span>
+        <span style="color: #fff;">ABERTA</span>
+      </h1>
+      <p class="highlight">O DESTINO DO SEU DINHEIRO NA CARA!</p>
+      
+      <!-- ===== NAVIGATION ===== -->
+      <nav>
+        <a href="/">Início</a> |
+        <a href="/reports">Relatórios</a> |
+        <a href="/complaints">Denúncias</a> |
+        <a href="/statistics">Estatísticas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT COM ROLE="MAIN" ===== -->
+  <main role="main">
+    <div class="container">
+      <!-- ===== SEÇÃO COM ARIA-LABELLEDBY ===== -->
+      <section aria-labelledby="hero-heading">
+        <h2 id="hero-heading">FISCALIZE O EXECUTIVO E O LEGISLATIVO</h2>
+        <p>
+          Acesse relatórios de auditoria, projetos de lei e denúncias de forma clara e acessível. 
+          Cobre o governo com informações confiáveis e verificadas.
+        </p>
+      </section>
+
+      <!-- ===== SEÇÃO DE DESTAQUES COM ARTICLES ===== -->
+      <section aria-labelledby="destaques-heading">
+        <h2 id="destaques-heading">DESTAQUES DO DIA</h2>
+        
+        <!-- ===== ARTICLE 1 ===== -->
+        <article>
+          <h3>R$ 5 MILHÕES EM FESTAS?</h3>
+          <p>
+            Prefeitura gastou uma fortuna em eventos. Relatório de auditoria revela despesas 
+            suspeitas com contratação de bandas e locação de espaços.
+          </p>
+          <time datetime="2026-02-25">25 de fevereiro de 2026</time>
+        </article>
+
+        <!-- ===== ARTICLE 2 ===== -->
+        <article>
+          <h3>CONTRATO SUSPEITO DE R$ 800 MIL</h3>
+          <p>
+            Material de papelaria adquirido sem licitação aberta. Análise jurídica identifica 
+            irregularidades no processo de contratação.
+          </p>
+          <time datetime="2026-02-24">24 de fevereiro de 2026</time>
+        </article>
+
+        <!-- ===== ARTICLE 3 ===== -->
+        <article>
+          <h3>OBRAS PARADAS - R$ 2 MILHÕES EM ABANDONO</h3>
+          <p>
+            Projetos de infraestrutura paralisados há mais de 6 meses. Cidadãos denunciam 
+            desperdício de recursos públicos.
+          </p>
+          <time datetime="2026-02-23">23 de fevereiro de 2026</time>
+        </article>
+      </section>
+
+      <!-- ===== SEÇÃO DE ESTATÍSTICAS ===== -->
+      <section aria-labelledby="stats-heading">
+        <h2 id="stats-heading">ONDE ESTÁ O DINHEIRO?</h2>
+        
+        <article>
+          <h3>RECEITAS MUNICIPAIS</h3>
+          <p><strong>R$ 235 MILHÕES</strong> - Arrecadação total do município em 2025</p>
+          <time datetime="2025">Ano fiscal 2025</time>
+        </article>
+
+        <article>
+          <h3>DESPESAS MUNICIPAIS</h3>
+          <p><strong>R$ 278 MILHÕES</strong> - Gastos totais do município em 2025</p>
+          <time datetime="2025">Ano fiscal 2025</time>
+        </article>
+      </section>
+
+      <!-- ===== SEÇÃO DE CTA ===== -->
+      <section aria-labelledby="cta-heading">
+        <h2 id="cta-heading">ENCONTROU UMA IRREGULARIDADE?</h2>
+        <p>
+          Denuncie gastos suspeitos, contratos irregulares e obras paradas. 
+          Suas denúncias são analisadas e publicadas com segurança.
+        </p>
+        <a href="/complaints/new" style="color: #fbbf24; text-decoration: underline;">
+          Fazer Denúncia Agora →
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER COM ROLE="CONTENTINFO" ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>
+        <strong>Boca Aberta</strong> - Plataforma de Transparência e Auditoria Cidadã
+      </p>
+      <p style="font-size: 0.9rem; margin-top: 8px;">
+        Desenvolvido para fiscalizar o executivo e o legislativo municipal. 
+        Acesse relatórios de auditoria, projetos de lei, denúncias e estatísticas de conformidade.
+      </p>
+      <p style="font-size: 0.8rem; margin-top: 16px;">
+        © 2026 - Todos os direitos reservados
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== ANALYTICS (OPCIONAL) ===== -->
+  <script>
+    // Exemplo de analytics tracking
+    console.log('Boca Aberta - Página carregada com sucesso');
+  </script>
+</body>
+</html>

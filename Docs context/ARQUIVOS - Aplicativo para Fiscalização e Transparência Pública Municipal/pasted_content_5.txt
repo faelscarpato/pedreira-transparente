@@ -1,0 +1,72 @@
+Entendido — e corrigido.
+
+A partir de agora, toda auditoria que eu fizer vai obrigatoriamente cruzar o que está no documento auditado com os arquivos de apoio da sua base (LOM/1990, CF/88, Constituição Estadual, Código Tributário Municipal, Estatutos, Plano de Cargos, relatórios contábeis etc.).
+
+Correção importante sobre minhas respostas anteriores
+
+Eu marquei “LOM/1990: informação ausente” em partes da auditoria anterior. Isso estava incorreto, porque a sua base tem a Lei Orgânica (“Lei Orgânica – Leis.org.pdf”). Eu já consultei esse arquivo agora e passo a usar seus dispositivos como regra municipal de referência.
+
+Prova de consulta (LOM – exemplos diretos que já usei)
+
+Da Lei Orgânica (Leis.org), encontrei pontos que impactam diretamente as PLO/Leis Ordinárias que você me enviou:
+
+Competência da Câmara para votar orçamento e autorizar créditos suplementares/especiais
+→ Art. 8º, III: “votar o orçamento anual… a LDO… bem como autorizar a abertura de créditos suplementares e especiais”. (LOM – Art. 8º)
+
+Competência privativa da Câmara para fixar subsídios (Prefeito/Vice/Presidente da Câmara e Vereadores)
+→ Art. 9º, VII: “fixar os subsídios… bem como os subsídios dos Vereadores”. (LOM – Art. 9º)
+
+Competência municipal e orçamento
+→ Art. 5º, §1º, I: “elaborar o orçamento, prevendo a receita e fixando a despesa, com base no PPA e diretrizes orçamentárias”. (LOM – Art. 5º)
+
+
+Esses três artigos já mudam o “padrão” da auditoria: sempre que houver LOA, LDO, créditos, subsídios/benefícios a agentes políticos, eu vou checar (i) competência/forma na LOM, (ii) compatibilidade com a CF/88 e (iii) impacto fiscal.
+
+
+---
+
+Como isso afeta imediatamente a auditoria das PLO/Leis Ordinárias (que você pediu)
+
+Vou emitir um ADENDO (a partir daqui, na próxima mensagem sua ou no próximo pacote de leis/PLs que você mandar) reavaliando especialmente:
+
+1. Lei 4.556/2025 (LOA 2026)
+
+cruzar autorização de créditos (ex.: 20%) com o princípio do Art. 8º, III da LOM (Câmara autoriza créditos) + regras da CF/88 (arts. 165–167).
+
+
+
+2. Lei 4.566/2025 (auxílio-alimentação vereadores)
+
+agora com base explícita na LOM Art. 9º, VII (fixação de subsídios) + análise de risco de “aumento indireto” à luz da CF/88 (tema sensível).
+
+
+
+3. Lei 4.565/2025 (subsídio ao transporte)
+
+cruzar com competência municipal e organização do serviço público/concessão (LOM Art. 5º §1º IV menciona serviços públicos sob concessão/permissão) e exigências de transparência/controle (CF/88 art. 37).
+
+
+
+4. Lei 4.558/2025 (loteria municipal)
+
+cruzar com CF/88 art. 175 (serviço público/concessão) e verificar se a LOM tem amarras adicionais sobre concessões/serviços e fiscalização.
+
+
+
+
+
+---
+
+Pendência (para eu fechar “Conformidade LOM/1990” com alto rigor)
+
+Mesmo com a LOM já consultada, ainda falta histórico legislativo (autor do PL, datas de tramitação, turnos, quórum detalhado) porque os PDFs do Leis.org geralmente trazem só a lei sancionada.
+
+Se você tiver (ou puder anexar depois):
+
+ata/pauta/votação da Câmara (ou o “processo legislativo” do PL), eu consigo preencher Autor, datas, votações como você exige no método.
+
+
+
+---
+
+Se você quiser, já no próximo passo me diga apenas quais PLO/leis são prioridade (ex.: auxílio dos vereadores, loteria, LOA 2026, subsídio transporte). Se você não escolher, eu começo pela ordem de maior risco fiscal: LOA 4.556 → subsídio transporte 4.565 → auxílio vereadores 4.566 → loteria 4.558.

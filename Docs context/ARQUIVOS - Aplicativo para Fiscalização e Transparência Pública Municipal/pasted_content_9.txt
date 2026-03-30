@@ -1,0 +1,237 @@
+Segundo documentos do Diário Oficial de Pedreira (jan/2026–fev/2026) e de PLOs/leis de 2025 analisados nesta conversa, segue um relatório pragmático de problemas, com: (i) onde há risco/descumprimento da LOM/1990, (ii) onde exigir detalhes técnicos e transparência, e (iii) uma justificativa forte para sustentar que “PLO de verba” está passando fácil demais sem orçamento/lastro.
+
+
+---
+
+1) Problemas recorrentes detectados (visão de controle social)
+
+1.1 Integridade do Diário Oficial: erros formais que fragilizam a segurança jurídica
+
+Problema: publicação de atos com erro material (data/total) e ausência de errata imediata.
+Por que isso importa: abre margem para contestação administrativa/judicial e enfraquece a confiança na base legal do gasto/tributo.
+
+Exemplos concretos
+
+Decreto nº 4364 (crédito por excesso): o ato aparece como “de 08/01/2026”, mas no mesmo texto consta “Pedreira (SP), 08 de janeiro de 2025” (erro material). (Edição 1927 – 09/01/2026; p.1 do PDF)
+
+Decreto nº 4.379 (SAAE): o decreto afirma R$ 57.873,69, repete o total correto na suplementação, mas traz “TOTAL R$ 57.573,69” na parte da anulação (divergência interna de R$ 300). (Edição 1949 – 10/02/2026; p.1 do PDF)
+
+
+➡️ Ação pragmática: requerer errata/republicação e exigir que o Controle Interno informe em quanto tempo corrige atos com inconsistências.
+
+
+---
+
+1.2 “PLO/Lei de verba” com justificativa genérica: baixa auditabilidade e alto risco fiscal
+
+Padrão observado: textos que autorizam despesa/benefício (“dotações próprias… suplementadas se necessário”) sem:
+
+memória de cálculo,
+
+estimativa de impacto anual/mensal,
+
+fonte exata e ação orçamentária,
+
+critério objetivo de medição/pagamento.
+
+
+Exemplo 1 — Subsídio ao transporte (2026) A Lei nº 4.565/2025 autoriza subsídio mensal calculado por “passageiros equivalentes”, com teto de R$ 100.000,00 e diz que despesas correrão por dotações próprias “que poderão ser suplementadas”.
+✅ O teto existe. ❌ Falta no texto: metodologia auditável do “passageiro equivalente” (como calcula, quem certifica, quais dados, periodicidade, auditoria).
+
+Exemplo 2 — Créditos por decreto (remanejamento) O Decreto nº 4340 abre crédito suplementar por anulação de R$ 1.225.300,00 e mostra, por exemplo, reforço grande em creches – vencimentos (R$ 705.000,00).
+✅ A conta “fecha” no papel. ❌ Mas o Diário não traz o processo justificativo (saldo antes/depois, impacto no serviço que perdeu dotação, parecer contábil).
+
+➡️ Ação pragmática: Câmara e sociedade civil devem parar de aceitar “dotações próprias” como justificativa. Isso é só uma frase padrão; não prova necessidade, adequação nem impacto.
+
+
+---
+
+1.3 Renúncia fiscal (REFIS) com pontos sensíveis de transparência e juridicidade
+
+O PLO 19/2025 (REFIS) traz:
+
+desconto de juros/multas e até desconto de principal em certas hipóteses
+
+cláusula sensível sobre “desobrigação do pagamento de verbas e honorários”
+
+menção de atendimento ao art. 14 da LRF, com anexo de “compensação” e anexo com declaração/assinatura do Diretor Geral do SAAE, Leonardo Selingardi.
+
+
+Problema pragmático: o material fala em compensação, mas não deixa cristalino (para o cidadão) qual é a estimativa do valor renunciado (quanto deixa de entrar por desconto, por cenário).
+➡️ Ação pragmática: exigir planilha pública com 3 cenários (baixo/médio/alto) + separação Município × SAAE.
+
+
+---
+
+1.4 Tributação (Taxa do Lixo): número “final” publicado, mas sem memória pública suficiente
+
+O Decreto de Taxa de Coleta de Lixo 2026 publica:
+
+custo contábil do serviço em 2025: R$ 6.017.837,48
+
+número de imóveis: 17.511
+
+base apurada: R$ 343,66
+e fundamenta competência inclusive na LOM (“artigo 119…”).
+
+
+Problema: publicar “custo total” e “base” sem abrir a memória de custo (quais despesas compõem o custo contábil, exclusões, rateio) é o tipo de transparência insuficiente que gera desconfiança e judicialização.
+
+➡️ Ação pragmática: pedir anexos do processo: centros de custo, empenhos agregados, critérios de rateio, auditoria do cadastro imobiliário.
+
+
+---
+
+2) Onde há potencial descumprimento da LOM/1990 (vicio formal por iniciativa)
+
+Regra local (LOM/1990) que trava “lei de vereador mandando o Executivo fazer”
+
+A LOM/1990 diz que:
+
+a iniciativa das leis é ampla, mas
+
+é privativa do Prefeito a iniciativa de leis sobre “organização administrativa, serviços públicos e pessoal” e sobre “criação/estrutura/atribuições dos órgãos”. (LOM/1990, art. 38, IV e V; p.18 do arquivo “Lei Orgânica - Leis.org.pdf”)
+
+e o Prefeito pode pedir urgência somente para projetos de sua iniciativa. (LOM/1990, art. 42; p.18 do mesmo arquivo)
+
+
+Casos típicos (do seu acervo de PLOs) que entram em “zona de risco” pela LOM
+
+PLO 08/2025 (vereador Jedson Roberto Panegassi Barbosa): obriga unidades de saúde a manter painel com médicos plantonistas (impacta rotina/gestão). (PLO 08/2025, p.2 – assinatura do autor; arquivo “PLO 8-2025.pdf”)
+PLO 43/2025 (vereador Jedson Roberto Panegassi Barbosa): obriga a Secretaria Municipal de Saúde a divulgar estoques de medicamentos/vacinas quinzenalmente (impacta rotina/gestão). (PLO 43/2025, art. 1º e assinatura do autor; arquivo “PLO 43-2025.pdf”)
+
+✅ Esses projetos podem ser defendidos como “transparência”, e o próprio PLO 08 cita entendimento do STF (Tema 917) como argumento.
+⚠️ Mas pela LOM/1990, eles ficam vulneráveis a alegação de vício formal se forem interpretados como interferência direta na gestão/serviços (art. 38, IV e V). O ponto pragmático aqui é: a Câmara precisa exigir parecer jurídico robusto sobre iniciativa em cada caso — e não só “opinião”.
+
+➡️ Ação pragmática: para cada PLO de vereador que cria obrigação operacional em secretaria:
+
+1. exigir “declaração de não invasão de iniciativa” + fundamentação;
+
+
+2. se houver dúvida, negociar substitutivo transformando em “diretriz” + obrigação de regulamentação pelo Executivo (reduz risco de derrubada).
+
+
+
+
+---
+
+3) Onde solicitar detalhes técnicos e maior transparência (checklist que funciona)
+
+3.1 Para créditos/remanejamentos (decretos ou PLOs de crédito)
+
+Exigir sempre:
+
+1. saldo antes/depois das dotações anuladas e suplementadas (por ação/programa);
+
+
+2. justificativa técnica (problema, urgência, alternativa analisada);
+
+
+3. parecer contábil + controle interno;
+
+
+4. se mexe com serviço essencial: impacto na prestação (o que será reduzido, qual contrato/serviço será afetado);
+
+
+5. publicação em formato planilha (origem/destino, rubrica, fonte, valor).
+
+
+
+Exemplo de por que isso é necessário: Decreto 4340 movimenta R$ 1.225.300,00 e reforça vencimentos em creches (R$ 705.000,00) — mas o Diário não mostra o “porquê” técnico, só o “o quê”.
+
+3.2 Para subsídios (transporte, entidades, etc.)
+
+Exigir:
+
+1. métrica pública (como mede “passageiros equivalentes”, qual base de dados, auditoria);
+
+
+2. memória mensal: passageiros, receita tarifária, déficit, cálculo do subsídio;
+
+
+3. gatilhos: quando reduz, quando suspende, quando revisa tarifa;
+
+
+4. auditoria independente anual (ou TCESP/controle interno).
+
+
+
+Exemplo: Lei 4.565/2025 prevê “passageiros equivalentes” e teto R$ 100 mil/mês, mas não traz metodologia — isso deve ser exigido como condição de liberação.
+
+3.3 Para REFIS (renúncia/parcelamento)
+
+Exigir:
+
+1. estimativa do valor renunciado (juros/multa/principal), em cenários;
+
+
+2. demonstrativo separado Município × SAAE (há quadro do SAAE no anexo);
+
+
+3. parecer jurídico específico sobre cláusulas sensíveis (ex.: honorários);
+
+
+4. relatório final do programa: quantos aderiram, quanto arrecadou, quanto renunciou.
+
+
+
+
+---
+
+4) “Justificativa poderosa” para embasar cobrança pública (texto pronto)
+
+> Tese: Sem memória de cálculo, impacto e fonte, “PLO/Lei de verba” vira autorização genérica que transforma a Câmara em carimbadora e enfraquece o controle do gasto.
+
+
+
+Texto-base (pronto para requerimento/manifestação):
+
+A Câmara Municipal não pode deliberar com responsabilidade sobre créditos, subsídios e programas de renúncia fiscal quando o Executivo (ou o autor do projeto) se limita a fórmulas genéricas como “correrá por dotações próprias, suplementadas se necessário”. Essa expressão não informa a origem real do recurso, não demonstra impacto sobre as ações que perderão dotação, não quantifica custo anual e não apresenta a metodologia de cálculo quando há indicadores (“passageiros equivalentes”, “compensação de renúncia”, “custo contábil”).
+
+Exemplos práticos mostram o risco: a Lei de subsídio ao transporte prevê cálculo por “passageiros equivalentes” e teto mensal de R$ 100 mil, mas não apresenta metodologia nem auditoria; e decretos de crédito movimentam valores elevados com detalhamento contábil de rubricas, porém sem publicação do processo justificativo e dos saldos antes/depois.
+
+Por isso, é dever do Legislativo e do controle social exigir, como condição mínima de tramitação, a apresentação de: (i) memória de cálculo, (ii) impacto orçamentário anual, (iii) saldos antes/depois nas dotações afetadas, (iv) parecer contábil e do controle interno, e (v) transparência ativa em formato de planilha. Sem esses elementos, a aprovação é temerária, reduz a rastreabilidade do gasto e viola os princípios de publicidade e eficiência que devem reger a Administração Pública.
+
+
+---
+
+5) Nomes e cargos identificados (para rastreabilidade e responsabilização institucional)
+
+Diário Oficial / Atos do Executivo
+
+Fábio Vinícius Polidoro – Prefeito Municipal (assinando decretos/portarias).
+
+Marcelo Rodrigues Teixeira – Secretário Municipal de Negócios Jurídicos (aparece em atos/assinaturas).
+
+Sérgio Aparecido de Santi – Secretário Municipal de Administração e Recursos Humanos (publicação/portaria).
+
+Camila Cristina Mendes Castilho – Agente administrativo (designada “Terceiro Setor”).
+
+Vanderli Toniato – Auxiliar de saúde (designada “Terceiro Setor”).
+
+Raphael Soares de Oliveira – Chefe da Divisão de Contratos e Aditivos (rescisão contratual e base legal).
+
+
+PLOs/Leis
+
+Jedson Roberto Panegassi Barbosa – Vereador, autor do PLO 43/2025 (assinatura no projeto). (PLO 43/2025, p.3 – “Autor do Projeto”; arquivo “PLO 43-2025.pdf”)
+
+Leonardo Selingardi – Diretor Geral do SAAE (declaração/anexo REFIS).
+
+
+
+---
+
+6) Pendências objetivas para fortalecer ainda mais o relatório
+
+1. Consolidar (em planilha) todos os decretos de crédito do mês, com origem/destino e “antes/depois”.
+
+
+2. Para cada lei/PLO de impacto financeiro (subsídio, REFIS, créditos), obter o processo administrativo completo (parecer contábil + controle interno + memória de cálculo).
+
+
+3. Padronizar no Diário: toda vez que houver erro material (data/total), publicar errata no próximo dia útil com controle de versão.
+
+
+
+Se você quiser, eu transformo este relatório em um roteiro de fiscalização (modelo de requerimentos + checklist de documentos) já separando por: Transporte, Créditos, Renúncia/REFIS, Tributos/Taxas e Terceiro Setor.

@@ -1,0 +1,298 @@
+Segundo documentos de 27/11/2025 a 18/12/2025 (Leis Ordinárias 4.554/2025, 4.556/2025, 4.558/2025, 4.559/2025, 4.562/2025, 4.563/2025, 4.564/2025, 4.565/2025, 4.566/2025 e anexo da LOA 4.556/2025), segue a auditoria das PLO/Leis Ordinárias anexadas (base somente no texto dos PDFs do Leis.org e anexo).          
+
+
+---
+
+1) Identificação do Documento
+
+Conjunto auditado (PLO/Leis Ordinárias)
+
+Lei nº 4.554/2025 (27/11/2025) – Subvenção social (Núcleo da Terceira Idade) 
+
+Lei nº 4.556/2025 (03/12/2025) – LOA 2026 (estima receita e fixa despesa) 
+
+Anexo da Lei 4.556/2025 – “Fichas da Despesa” do Orçamento 2026 
+
+Lei nº 4.558/2025 (08/12/2025) – Serviço público municipal de loteria  
+
+Lei nº 4.559/2025 (08/12/2025) – altera ementa e art. 1º da Lei 2.356/2003 (convênios/adoção de espaços públicos) 
+
+Lei nº 4.562/2025 (09/12/2025) – Programa “Família Acolhedora”  
+
+Lei nº 4.563/2025 (18/12/2025) – Dia municipal (animais em extinção) 
+
+Lei nº 4.564/2025 (18/12/2025) – Programa “Adote um Ponto de Ônibus” 
+
+Lei nº 4.565/2025 (18/12/2025) – subsídio à concessionária do transporte público (2026) 
+
+Lei nº 4.566/2025 (18/12/2025) – auxílio-alimentação para vereadores 
+
+
+Autor / Datas / Votações
+
+Autor do Projeto (PLO): INFORMAÇÃO AUSENTE nos textos do Leis.org (as leis trazem apenas “Câmara aprovou e Prefeito sanciona”).  
+
+Data de aprovação, nº de votações, quórum: INFORMAÇÃO AUSENTE nesses PDFs (exigiria ata/pauta legislativa correspondente).
+
+
+
+---
+
+2) Resumo Executivo (não técnico)
+
+O pacote de leis analisado tem 3 “núcleos” de risco/atenção:
+
+1. Orçamento 2026 (LOA 4.556/2025): define o tamanho do orçamento (R$ 322.977.188,90) e autoriza mecanismos de créditos/remanejamentos. É a lei mais sensível para controle social. 
+
+
+2. Leis com impacto financeiro recorrente: subsídio ao transporte (até R$ 100 mil/mês) e auxílio-alimentação a vereadores (R$ 950/mês + parcela anual R$ 475). Exigem transparência e controles para não virarem aumento indireto de despesa sem justificativa.  
+
+
+3. Leis de política pública/regulação: “Família Acolhedora” (assistência), loteria municipal (regulação e concessão), “Adote um Ponto de Ônibus” e “Dia municipal” (programas). Aqui o risco maior é falta de critérios operacionais (normas genéricas que dependem de decreto/ato posterior).   
+
+
+
+
+---
+
+3) Achados Jurídicos (Leis Municipais + LOM/1990)
+
+> PENDÊNCIA: sem o texto integral da LOM/1990 nesta solicitação, eu não consigo fechar “conformidade municipal” (competências locais detalhadas, quóruns, rito orçamentário próprio). Marco o que precisa ser cruzado na Seção 7.
+
+
+
+3.1 LOA 2026 – Lei 4.556/2025 (alto impacto)
+
+1. Autorização ampla de créditos suplementares e reclassificações: risco de “flexibilização excessiva” sem transparência ativa
+
+
+
+Evidência: orçamento total R$ 322.977.188,90; autoriza abrir créditos suplementares até 20% das dotações e prevê reclassificações de fonte/elemento “na mesma ação orçamentária” por decreto, com justificativa. 
+
+Risco técnico (inferência): autorização ampla exige contrapesos: publicação de planilhas “antes/depois”, motivação e rastreabilidade, para evitar remanejamentos que esvaziem políticas públicas.
+
+Severidade: Alta (por alcance financeiro e recorrência durante 2026).
+
+Ação recomendada: exigir/monitorar: (i) decretos de crédito com origem/destino; (ii) relatórios mensais consolidados; (iii) justificativa da “mesma ação” quando houver troca de elemento/fonte. 
+
+
+2. Anexo das “Fichas da Despesa” aumenta auditabilidade, mas precisa de consolidação por secretaria/programa
+
+
+
+Evidência: anexo apresenta “Orçamento Programa Exercício 2026 – Fichas da Despesa” (múltiplas fichas e fontes). 
+
+Severidade: Média
+
+Ação recomendada: consolidar (em planilha) por: secretaria/unidade, programa/ação, natureza da despesa e fonte.
+
+
+3.2 Subsídio ao transporte – Lei 4.565/2025
+
+3. Subsídio mensal variável, com teto (R$ 100 mil/mês): precisa de regra objetiva e publicação dos cálculos
+
+
+
+Evidência: autoriza subsídio de jan–dez/2026 à concessionária Expresso Fênix, calculado pelo nº de “passageiros equivalentes”, com teto R$ 100.000,00/mês; autoriza rever tarifas. 
+
+Risco técnico: conceito “passageiros equivalentes” precisa de definição pública + auditoria de bilhetagem/dados; risco de “subsídio sem métrica verificável”.
+
+Severidade: Alta
+
+Ação recomendada: publicar mensalmente: passageiros equivalentes, receita tarifária, déficit apurado, metodologia e ateste técnico (especialmente se houver termo aditivo/nota fiscal ligada ao subsídio).
+
+
+3.3 Auxílio-alimentação de vereadores – Lei 4.566/2025
+
+4. Benefício indenizatório a agentes políticos: risco de questionamento se virar aumento indireto de subsídio
+
+
+
+Evidência: auxílio-alimentação a vereadores: R$ 950/mês via cartão + R$ 475 anual (parcela única até 20/12); declara natureza indenizatória, proíbe vincular à assiduidade e proíbe uso como aumento indireto do subsídio. 
+
+Risco técnico-jurídico: mesmo com rótulo “indenizatório”, pode ser contestado se não houver lastro em finalidade/controle e se configurar ganho fixo típico de remuneração.
+
+Severidade: Alta
+
+Ação recomendada: definir controles mínimos na regulamentação (ex.: regras do cartão, rubricas permitidas, vedação de saque, prestação de contas compatível com proteção de dados e controle interno).
+
+
+3.4 Loteria municipal – Lei 4.558/2025
+
+5. Criação de serviço público de loteria: requer desenho robusto de governança, integridade e licitação
+
+
+
+Evidência: institui loteria municipal (art. 175 CF citado), competência na Secretaria de Finanças, exploração direta/indireta (concessão/permissão/autorização), destinação de outorga para saúde (média/alta complexidade) e exige medidas de prevenção à lavagem de dinheiro (Lei 9.613/1998, COAF).  
+
+Riscos: (i) modelo regulatório incompleto; (ii) risco reputacional/controle; (iii) necessidade de regras de publicidade, fiscalização e integridade.
+
+Severidade: Alta
+
+Ação recomendada: decreto regulamentador deve trazer: modelo de contratação, requisitos técnicos, auditoria independente, regras AML/COAF operacionais, transparência dos repasses e penalidades.
+
+
+3.5 Família Acolhedora – Lei 4.562/2025
+
+6. Política pública alinhada à proteção integral, mas com impacto fiscal variável (bolsa até 2 salários mínimos)
+
+
+
+Evidência: cria serviço de acolhimento familiar com base no art. 227 CF e ECA; vincula à Secretaria de Assistência; prevê bolsa-auxílio fixada por decreto “até 2 salários mínimos” por acolhido e possibilidade de uso do FUMCAD mediante deliberação do CMDCA.  
+
+Risco fiscal: custo pode variar conforme nº de acolhidos; precisa de estimativa e dotação clara.
+
+Severidade: Média/Alta
+
+Ação recomendada: exigir estimativa anual de atendimentos, impacto orçamentário, e regras objetivas do decreto (valor, critérios, prestação de contas, controle e ressarcimento em irregularidades). 
+
+
+3.6 Leis “programáticas” e de ajuste formal
+
+7. Lei 4.564/2025 (“Adote um Ponto de Ônibus”) é genérica: falta critérios mínimos e salvaguardas
+
+
+
+Evidência: prevê parceria com pessoas físicas/jurídicas para coberturas, bancos, iluminação e manutenção; “a critério do Executivo” definir termos e critérios. 
+
+Severidade: Média
+
+Ação recomendada: regulamentar com: critérios de seleção, padronização urbanística, responsabilidade civil, publicidade permitida/vedada, manutenção e reversão ao patrimônio público.
+
+
+8. Lei 4.563/2025 (“Dia Municipal…”) – baixo risco, mas depende de execução sem custo oculto
+
+
+
+Evidência: institui dia 22 de maio; prevê ações educativas; despesas por dotações próprias. 
+
+Severidade: Baixa
+
+Ação recomendada: vincular ações a programas já existentes (evita despesa nova sem previsão).
+
+
+9. Lei 4.559/2025 – alteração de ementa/artigo de lei anterior
+
+
+
+Evidência: altera ementa e art. 1º da Lei 2.356/2003 sobre convênios para conservação/manutenção de espaços públicos (parques, praças, rotatórias, canteiros etc.). 
+
+Severidade: Baixa/Média
+
+Ação recomendada: conferir (no texto da Lei 2.356/2003 e na LOM/1990) se há exigência de chamamento, contrapartidas, publicidade e padrão de identidade visual (para evitar privatização informal do espaço público).
+
+
+10. Lei 4.554/2025 – subvenção social (R$ 87.600,00)
+
+
+
+Evidência: autoriza subvenção ao Núcleo da Terceira Idade até R$ 87.600,00 em 2026, citando LDO e art. 26 da LRF. 
+
+Severidade: Média
+
+Ação recomendada: exigir plano de trabalho, metas e prestação de contas; checar compatibilidade com regras locais de transferências (LOM/1990 e legislação municipal do terceiro setor).
+
+
+
+---
+
+4) Controle de Compatibilidade com CF/88
+
+Tema	Base constitucional	Status	Justificativa
+
+LOA e execução orçamentária	arts. 165–167	Tende a compatível (formal)	LOA fixa receita/despesa e prevê créditos/remanejamentos por decreto dentro de condições. 
+Subsídio ao transporte	art. 37 (legalidade/publicidade) e regime de concessão (art. 175)	Potencial ponto de atenção	Autoriza subsídio com teto e métrica (“passageiros equivalentes”), mas sem detalhar metodologia/publicidade no texto da lei. 
+Auxílio-alimentação de vereadores	art. 37 caput; regime de subsídio do art. 39 §4º (tema sensível)	Potencial incompatibilidade (risco)	Apesar de dizer “indenizatório”, pode ser interpretado como aumento indireto se não houver controles e finalidade comprovável. 
+Proteção integral de crianças e adolescentes	art. 227	Compatível	Lei “Família Acolhedora” se ancora explicitamente no art. 227 e no ECA. 
+Loteria municipal (serviço público + concessão)	art. 175	Potencial ponto de atenção	Lei cria serviço e prevê concessão/permissão; compatibilidade depende do desenho regulatório, licitação e controles (governança/AML). 
+
+
+
+---
+
+5) Auditoria Fiscal/Orçamentária (se aplicável)
+
+Tabela de impactos financeiros diretos no pacote
+
+Lei	Objeto	Valor/limite	Observação fiscal
+
+4.556/2025	LOA 2026	R$ 322.977.188,90	Base de toda execução 2026; autoriza suplementação até 20%. 
+4.565/2025	Subsídio transporte	até R$ 100.000/mês	Pode chegar a R$ 1,2 mi/ano; exige metodologia auditável. 
+4.566/2025	Auxílio-alimentação vereadores	R$ 950/mês + R$ 475/ano	Impacto por nº de vereadores; risco de caracterização remuneratória. 
+4.562/2025	Família Acolhedora	até 2 salários mínimos por acolhido	Impacto variável; precisa estimativa anual e dotação. 
+4.554/2025	Subvenção social	R$ 87.600,00/ano	Transferência a entidade; exige metas e prestação de contas. 
+
+
+Conclusão fiscal do pacote: Alto risco de governança (não por “erro matemático” aparente, mas por teto amplo e despesas contínuas exigirem transparência, critérios e processos administrativos robustos). 
+
+
+---
+
+6) Correções Sugeridas
+
+1. Lei 4.565 (subsídio transporte): incluir (por decreto/regulamento ou aditivo padronizado) metodologia pública de “passageiros equivalentes”, forma de auditoria e publicação mensal de dados.
+
+
+2. Lei 4.566 (auxílio vereadores): regulamentação deve prever controles objetivos do cartão e trilha de auditoria (controle interno e transparência).
+
+
+3. Lei 4.558 (loteria): antes de operar, publicar regulamento completo + modelo de licitação/concessão e política de integridade/AML.
+
+
+4. Lei 4.562 (família acolhedora): decreto do valor da bolsa deve vir acompanhado de estimativa de impacto e fonte/dotação.
+
+
+5. Lei 4.564 (adote ponto de ônibus): regulamentar com critérios urbanísticos, responsabilidades, publicidade e reversão.
+
+
+
+
+---
+
+7) Pendências e Dados Ausentes
+
+Para fechar a auditoria com alta confiança:
+
+1. LOM/1990 (texto integral): INFORMAÇÃO AUSENTE nesta etapa (necessário para checar: iniciativa, limites locais, rito orçamentário municipal e competências internas).
+
+
+2. Autor do PLO (iniciativa formal) para cada lei: INFORMAÇÃO AUSENTE nos PDFs do Leis.org.
+
+
+3. Histórico legislativo (datas, turnos, quórum, votação nominal): INFORMAÇÃO AUSENTE nos PDFs anexados.
+
+
+4. Processos administrativos (subsídio transporte; auxílio; loteria; família acolhedora; subvenção) não foram anexados.
+
+
+
+
+---
+
+8) Anexo de Rastreamento
+
+LOA 2026 e autorização de suplementação/remanejamentos: 
+
+Anexo “Fichas da Despesa”: 
+
+Subsídio transporte (teto e critério): 
+
+Auxílio-alimentação vereadores (valores, natureza e vedações): 
+
+Loteria municipal (competência, outorga, COAF):  
+
+Família Acolhedora (base CF/88, bolsa e teto):  
+
+Subvenção social (valor e entidade): 
+
+Adote um ponto de ônibus (programa e ausência de critérios): 
+
+Dia municipal (conteúdo programático): 
+
+Alteração Lei 2.356/2003 (texto alterado): 
+
+
+
+---
+
+Se você me enviar a LOM/1990 (ou autorizar eu usar a que já está no seu ambiente, se for a mesma versão oficial), eu fecho a parte “Conformidade LOM” com: iniciativa correta, limites de remanejamento, regras municipais para subvenções/terceiro setor e eventuais exigências de quórum/rito para cada matéria.

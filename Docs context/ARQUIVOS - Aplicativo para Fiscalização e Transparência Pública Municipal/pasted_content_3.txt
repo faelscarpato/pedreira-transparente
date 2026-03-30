@@ -1,0 +1,259 @@
+Segundo documentos publicados em 29–30/01/2026 (edições 1941–1942) e também em 02–10/02/2026 (edições 1943–1949) que você anexou agora, segue a continuação da auditoria.
+
+> Observação de escopo (importante): você pediu “janeiro/2026”, porém parte dos arquivos anexados já é fevereiro/2026. Eu auditei tudo o que foi anexado e deixo claro o que é janeiro vs. fevereiro.    
+
+
+
+
+---
+
+1) Identificação do Documento
+
+A) Janeiro/2026 (nesta remessa)
+
+Diário Oficial do Município de Pedreira/SP – ANO VIII – Poder Executivo
+
+Edição 1941 – 29/01/2026 
+
+Edição 1942 – 30/01/2026 
+
+
+Tipos identificados (jan):
+
+Comunicados tributários (IPTU 2026)
+
+RREO – Relatório Resumido de Execução Orçamentária (6º bimestre/2025) publicado em 30/01/2026 (peça fiscal relevante)
+
+
+B) Fevereiro/2026 (anexado junto)
+
+Edição 1943 – 02/02/2026 (publica decretos orçamentários de dezembro/2025 – Lei 4.442/2024) 
+
+Edição 1946 – 05/02/2026 (Lei municipal 4.567/2026; Lei 4.568/2026) 
+
+Edição 1948 – 09/02/2026 (Decreto 4.375/2026 – crédito por excesso FUNBEPE) 
+
+Edição 1949 – 10/02/2026 (Decreto 4.379/2026 – crédito por anulação SAAE; com inconsistência de total) 
+
+
+Autor / Datas / Votações (quando aplicável):
+
+Lei 4.567/2026: texto diz “Câmara Municipal aprovou” (mas o Diário não traz o placar ali). 
+
+Consta em ata/pauta legislativa (publicada no Diário de 04/02/2026, edição 1945) que o Projeto de Lei nº 08/26 (Prefeito Municipal) – crédito suplementar R$ 623.581,26 – foi 2º turno, maioria simples, aprovado por unanimidade, em 02/02/2026 (1ª sessão legislativa extraordinária). 
+
+Lei 4.568/2026 (Feira Noturna) aparece como lei sancionada; e também consta em pauta o PL 09/26 (Prefeito Municipal) “Feira Noturna”, aprovado em 2º turno com voto contrário de 1 vereador (segundo a pauta publicada).  
+
+
+
+---
+
+2) Resumo Executivo (não técnico)
+
+No fim de janeiro/2026, o Diário traz ações de arrecadação (entrega de carnês de IPTU e regras de vencimento/desconto) e, principalmente, uma peça grande de transparência fiscal: o RREO do 6º bimestre de 2025, com dados de receitas/despesas e anexos (inclusive RCL e previdência).  
+Nos documentos de fevereiro anexados junto, aparecem: (i) leis autorizando crédito suplementar por anulação (Lei 4.567) e (ii) decretos de créditos para entidades/serviços (FUNBEPE e SAAE). Há um erro material relevante no Decreto 4.379/2026 (SAAE): ele afirma crédito de R$ 57.873,69, mas em um ponto registra “TOTAL R$ 57.573,69”, criando divergência interna. 
+
+
+---
+
+3) Achados Jurídicos (Leis Municipais + LOM/1990)
+
+> PENDÊNCIA OBRIGATÓRIA: eu ainda não validei “artigo a artigo” da LOM/1990 nesta etapa porque ela não foi anexada nesta solicitação (ver Seção 7). Portanto, aqui eu aponto riscos e conformidades com base no que está publicado no Diário e em regras gerais (CF/88 e técnica orçamentária), deixando claro o que depende da LOM.
+
+
+
+3.1 IPTU 2026 (comunicados – arrecadação)
+
+1. Transparência básica sobre IPTU 2026: quantidade de carnês, índice de reajuste e condições de pagamento
+
+
+
+Evidência: foram emitidos 19.840 carnês; reajuste 5,10% (IPCA); vencimento 10/02/2026; pagamento à vista com 5% de desconto; orientações para 2ª via.  
+
+Severidade: Baixa
+
+Ação recomendada: publicar (se já não estiver no portal) a lei/ato que fixa a forma de atualização da base do IPTU (evita questionamento sobre método).
+
+
+3.2 RREO (publicação fiscal – 6º bimestre/2025)
+
+2. Publicação do RREO fortalece publicidade fiscal; exige verificação de consistência com LOA/relatórios do TCESP
+
+
+
+Evidência: RREO do 6º bimestre/2025 (documento gerado em 29/01/2026 21:57:24), com anexos como Balanço Orçamentário, Receita Corrente Líquida, Previdência/RPPS, etc.  
+
+Severidade: Média (não por irregularidade aparente, mas por ser peça “auditável” que deve bater com sistemas/TCESP).
+
+Ação recomendada: cruzar RREO com: (i) balancetes; (ii) relatórios do sistema contábil; (iii) publicações do TCESP.
+
+
+3.3 Lei 4.567/2026 (crédito suplementar por anulação)
+
+3. Crédito suplementar de R$ 623.581,26: remanejamento entre áreas (saúde/vigilância sanitária vs meio ambiente) — risco de desassistência/planejamento
+
+
+
+Evidência: Lei nº 4.567/2026 autoriza crédito suplementar por anulação de dotação de R$ 623.581,26. 
+
+O que está no documento: suplementa despesas ligadas a “Gestão do Abrigo de Animais – Canil/Gatil (Divisão de Vigilância Sanitária)” e reduz dotação do “Departamento de Meio Ambiente” para o mesmo programa/ação. 
+
+Processo legislativo (quando constou): PL 08/26 (Prefeito) em 2º turno, maioria simples, aprovado por unanimidade, em 02/02/2026 (pauta publicada). 
+
+Severidade: Alta (valor elevado; envolve serviços sensíveis).
+
+Ação recomendada: exigir do Executivo: justificativa do remanejamento, saldo anterior/posterior das dotações e impacto na execução ambiental.
+
+
+4. Lei 4.567/2026 autoriza atualizar metas físicas/financeiras e indicadores — precisa de rastreabilidade no PPA/LDO/LOA
+
+
+
+Evidência: artigo que autoriza atualizar metas e indicadores; e compatibilização com PPA e LDO/2026. 
+
+Severidade: Média
+
+Ação recomendada: publicar quadro “antes/depois” das metas/indicadores (boa prática de transparência).
+
+
+3.4 Decreto 4.379/2026 (SAAE) – inconsistência numérica interna
+
+5. Erro material/numérico em decreto de crédito do SAAE: TOTAL divergente
+
+
+
+Evidência: Decreto 4.379/2026 abre crédito por anulação no valor de R$ 57.873,69, mas no Art. 2º aparece “TOTAL R$ 57.573,69” (difere R$ 300,00) enquanto a tabela detalha R$ 57.873,69. 
+
+Severidade: Alta (ato orçamentário com valor divergente pode ser questionado).
+
+Ação recomendada: errata/republicação corrigindo o total e conferindo se a anulação corresponde integralmente à suplementação.
+
+
+3.5 Decreto 4.375/2026 (FUNBEPE) – excesso de arrecadação
+
+6. Crédito suplementar por excesso de arrecadação (FUNBEPE) com fonte federal indicada
+
+
+
+Evidência: Decreto 4.375/2026, valor R$ 14.813,33, por excesso de arrecadação decorrente de recursos federais conforme Portaria GM/MS nº 10.173 (22/01/2026); base legal Lei 4.556/2025. 
+
+Severidade: Baixa/Média (valor pequeno, fonte indicada; ainda assim exige processo).
+
+Ação recomendada: anexar no processo: repasse, extrato bancário/contábil e nota técnica de aplicação.
+
+
+
+---
+
+4) Controle de Compatibilidade com CF/88
+
+Tema	Base constitucional	Status	Justificativa
+
+Publicidade/transparência fiscal (RREO)	art. 37, caput (publicidade)	Compatível (no ato de publicar)	Publicação do RREO amplia transparência das contas. 
+Legalidade orçamentária (créditos)	arts. 165–167 (orçamento)	Potencial incompatibilidade formal (por erro material)	Decreto 4.379 tem divergência de total no próprio texto. 
+Política tributária (IPTU – comunicação)	art. 145 e 156 (competência tributária)	Sem conclusão material	O Diário informa reajuste por IPCA, mas não traz a “cadeia normativa” completa do lançamento (lei/cálculo). 
+
+
+
+---
+
+5) Auditoria Fiscal/Orçamentária (se aplicável)
+
+5.1 Lei nº 4.567/2026 – Crédito suplementar (R$ 623.581,26)
+
+Origem (anulação)	Destino (suplementação)	Programa/ação citado	Valor	Observação
+
+Departamento de Meio Ambiente	Divisão de Vigilância Sanitária	Gestão do Abrigo de Animais – Canil/Gatil	R$ 263.581,26 (parcial explicitado)	Remanejamento intra-programa, mas entre áreas; checar impacto no Meio Ambiente. 
+(Demais rubricas listadas na lei)	(Demais rubricas listadas)	(Saúde/Vigilância – materiais, serviços, obras, equipamentos)	até R$ 623.581,26	Para auditoria completa, recomendo extrair a lista inteira de rubricas do processo (o Diário traz a listagem, mas a checagem ótima pede planilha consolidada). 
+
+
+Conclusão fiscal: Alto risco setorial (valor alto e troca de dotação entre áreas), porém formalmente está como “por anulação” e consta aprovação legislativa (pauta). 
+
+5.2 Decreto nº 4.379/2026 – SAAE (R$ 57.873,69) com inconsistência
+
+Origem (anulação)	Destino (suplementação)	Natureza	Valor	Observação
+
+Materiais de consumo (3.3.90.30)	Serviços de terceiros PJ (3.3.90.39)	SAAE	R$ 57.873,69	Texto contém total divergente em um ponto (“57.573,69”). 
+
+
+Conclusão fiscal: Inconsistente (erro material) — exigir correção oficial.
+
+5.3 Decreto nº 4.375/2026 – FUNBEPE (R$ 14.813,33)
+
+Fonte	Destino	Valor	Observação
+
+Excesso de arrecadação – recurso federal (Portaria GM/MS 10.173/2026)	FUNBEPE – rubrica 3.1.90.16.00	R$ 14.813,33	Coerente como crédito por excesso; precisa comprovação do repasse. 
+
+
+
+---
+
+6) Correções Sugeridas
+
+1. Decreto 4.379/2026 (SAAE): corrigir imediatamente o “TOTAL” divergente
+
+
+
+Como corrigir: publicar ERRATA ou republicar o decreto com o total correto, conferindo se a anulação bate 100% com a suplementação. 
+
+
+2. Lei 4.567/2026: transparência do remanejamento (meio ambiente → vigilância)
+
+
+
+Como corrigir/aperfeiçoar: publicar memória de justificativa do crédito e quadro “antes/depois” das dotações e metas (PPA/LDO/LOA). 
+
+
+3. RREO: checagem de consistência
+
+
+
+Como corrigir/aperfeiçoar: publicar link/identificador do sistema contábil e do envio ao controle externo, para rastreabilidade pública. 
+
+
+
+---
+
+7) Pendências e Dados Ausentes
+
+1. LOM/1990 (texto integral): INFORMAÇÃO AUSENTE nesta etapa — necessário para fechar conformidade municipal (competências, iniciativa, regras locais de orçamento e organização administrativa).
+
+
+2. Processo administrativo do crédito (Lei 4.567/2026): justificativas, parecer contábil, saldos e impactos.
+
+
+3. Correção formal do Decreto 4.379/2026 (SAAE) para eliminar divergência numérica. 
+
+
+4. Janeiro/2026 ainda incompleto: nesta remessa só veio 29 e 30/01; o restante de janeiro você disse que enviará depois.
+
+
+
+
+---
+
+8) Anexo de Rastreamento (trechos usados)
+
+IPTU 2026 (19.840 carnês; IPCA 5,10%; vencimento e desconto):  
+
+RREO 6º bimestre/2025 (publicação e anexos):  
+
+Lei 4.567/2026 (crédito R$ 623.581,26; metas/indicadores; compatibilização PPA/LDO):  
+
+Pauta/ata legislativa: PL 08/26 (Prefeito) aprovado por unanimidade em 2º turno (02/02/2026): 
+
+Decreto 4.375/2026 (FUNBEPE – R$ 14.813,33; Portaria GM/MS 10.173/2026): 
+
+Decreto 4.379/2026 (SAAE – divergência “57.873,69” vs “57.573,69”): 
+
+
+
+---
+
+Se você quiser, no próximo envio (restante de janeiro), eu fecho um quadro consolidado só de janeiro/2026 com:
+
+lista de todas as leis/decretos/créditos do mês,
+
+mapa de remanejamentos (origem/destino por secretaria),
+
+e “top 10 riscos” com severidade e providência (errata, pedido de informação, emenda, etc.).

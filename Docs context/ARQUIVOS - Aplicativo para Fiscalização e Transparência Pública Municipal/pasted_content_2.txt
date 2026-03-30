@@ -1,0 +1,308 @@
+Segundo documentos de 15/01/2026 a 28/01/2026 (edições 1931 a 1940) do Diário Oficial de Pedreira/SP anexados, segue a continuação da auditoria (recorte parcial do mês).      
+
+
+---
+
+1) Identificação do Documento
+
+Tipo: Diário Oficial do Município (Poder Executivo) – ANO VIII
+Período auditado nesta etapa: 15 a 28 de janeiro de 2026 (com lacunas)
+Edições/datas analisadas (anexadas):
+
+1931 (15/01/2026) 
+
+1932 (16/01/2026) 
+
+1933 (19/01/2026) 
+
+1934 (20/01/2026) 
+
+1935 (21/01/2026) 
+
+1936 (22/01/2026) 
+
+1937 (23/01/2026) 
+
+1938 (26/01/2026) 
+
+1939 (27/01/2026) 
+
+1940 (28/01/2026) 
+
+
+INFORMAÇÃO AUSENTE (neste recorte): edições/dias 17, 18, 24 e 25/01/2026 (não foram anexados; posso ter perdido atos relevantes nesses dias).
+
+Foco de atos relevantes identificados no recorte (15–28):
+
+Decreto nº 4.366/2026 (Taxa de Coleta de Lixo 2026) 
+
+Portaria nº 006/2026 (Comissão Municipal de Planejamento do Orçamento; indicadores) 
+
+Portaria nº 007/2026 (Comissão ODS / IEG-M; Agenda 2030) 
+
+Despachos/atos licitatórios: anulação de pregão; homologação de certame fracassado; abertura de pregões    
+
+Contratos/aditivos: sistema integrado municipal (R$ 623.812,32 / 12 meses); transporte escolar (R$ 1.190.264,00)  
+
+Inexigibilidade: contratação da Imprensa Nacional (DOU) – R$ 3.000,00/12 meses 
+
+Conselhos (FUNDEB/CME): pautas de apresentação de receitas/despesas 
+
+
+Autor / Datas / Votações (processo legislativo): não se aplica à maioria (decretos/portarias/atos administrativos). Quando o decreto cita LOM/1990, a checagem “artigo a artigo” exige o texto integral da LOM na auditoria (pendência – ver Seção 7). 
+
+
+---
+
+2) Resumo Executivo (não técnico)
+
+Entre 15 e 28/01/2026, o Diário traz 3 blocos principais: (i) gestão tributária e de serviços urbanos (destaque: Decreto 4.366/2026 sobre Taxa de Coleta de Lixo), (ii) compras públicas e contratos (anulação de pregão, pregões abertos, aditivos relevantes como transporte escolar), e (iii) governança/planejamento (comissões de planejamento orçamentário, ODS/IEG-M) e controle social (reuniões FUNDEB/CME).
+O maior risco jurídico-material do recorte está no decreto tributário: é sensível a questionamentos se a taxa não refletir serviço específico/divisível e se os critérios se confundirem com base de imposto; o decreto tenta mitigar citando CF/88 art. 145 II e súmulas vinculantes do STF.
+O maior risco de integridade/execução está na área contratual: aditivos expressivos (ex.: R$ 1,19 milhão no transporte escolar) exigem atenção a justificativas, pesquisa de preços, fiscalização e qualidade do serviço.
+Há também medidas positivas de transparência: pautas públicas do FUNDEB/CME sobre receitas e despesas.
+
+
+---
+
+3) Achados Jurídicos (Leis Municipais + LOM/1990)
+
+> Aviso obrigatório: a LOM/1990 não foi anexada aqui; então eu não consigo validar com precisão se o decreto/portarias estão 100% aderentes aos artigos e limites locais. Eu registro o que o Diário diz e o que precisa ser checado (pendência na Seção 7).
+
+
+
+3.1 Tributação / Taxa de Coleta de Lixo (Decreto 4.366/2026)
+
+1. Decreto regulamenta lançamento e cobrança da Taxa de Coleta de Lixo 2026, com base explícita no CTM (Lei 2.260/2001) e critérios numéricos
+
+
+
+Evidência: Decreto nº 4.366, “lançamento da Taxa de Coleta de Lixo”; fundamenta regulamentação dos arts. 294–297 do CTM (Lei Municipal 2.260/2001) e prevê cobrança 2026. 
+
+O que está no documento: custo contábil do serviço em 2025 (R$ 6.017.837,48), total de imóveis com área edificada (17.511), base de cálculo apurada (R$ 343,66) e tabela por faixas de área/uso com valores mensais indicados. 
+
+Severidade: Média (o ato é formal e detalhado; mas matéria é sensível e exige coerência técnica de custo/critério).
+
+Ação recomendada: exigir/publicar (como anexo do processo) a memória de cálculo do “custo contábil” e metodologia de rateio, inclusive custos excluídos/incluídos.
+
+
+2. Cálculo da base (custo ÷ imóveis) parece coerente por arredondamento, mas precisa de memória de cálculo oficial
+
+
+
+Evidência: custo R$ 6.017.837,48 e 17.511 imóveis geram base “R$ 343,66”. 
+
+Inferência técnica (minha): o quociente é compatível por arredondamento, mas o decreto não mostra a planilha/centavos do rateio.
+
+Severidade: Baixa/Média (não é erro evidente; é exigência de transparência técnica).
+
+Ação recomendada: solicitar demonstrativo com: centros de custo, notas de empenho agregadas, rateio e validação contábil.
+
+
+3. Cobrança junto à conta de água/esgoto (SAAE) — exige cuidado com hipóteses de imóveis sem ligação e divergência cadastral
+
+
+
+Evidência: decreto determina cobrança “juntamente com a conta de água e esgoto do SAAE” e prevê carnê apartado em caso de divergência cadastral ou impossibilidade. 
+
+Risco: se houver imóveis sem ligação/sem conta, o município precisa garantir isonomia e lançamento correto para evitar contestações.
+
+Severidade: Média
+
+Ação recomendada: checar no processo: regras de integração cadastro tributário × cadastro SAAE; como tratam imóveis sem hidrômetro/sem consumo.
+
+
+3.2 Governança/Planejamento (Portarias 006/2026 e 007/2026)
+
+4. Comissão Municipal de Planejamento do Orçamento com “caráter consultivo e deliberativo” — risco de extrapolar atribuições se substituir competências legais
+
+
+
+Evidência: Portaria 006/2026 cria comissão “consultiva e deliberativa”, com atribuições ligadas a PPA/LDO/LOA, emendas e monitoramento de indicadores. 
+
+Risco jurídico (técnico): comissão interna pode apoiar, mas não pode “tomar para si” competências que sejam legalmente do Prefeito/Secretarias/Câmara (precisa cruzar com LOM/1990).
+
+Severidade: Média
+
+Ação recomendada: ao cruzar com a LOM/1990, verificar se “deliberativo” está limitado a rotinas internas (e não a decisão final); se necessário, ajustar redação para “consultivo e de acompanhamento”.
+
+
+5. Comissão ODS/IEG-M (Portaria 007/2026) — compatível como governança, desde que sem criar obrigações fora da lei
+
+
+
+Evidência: Portaria 007/2026 institui comissão para ODS/Agenda 2030 e IEG-M, citando Lei Municipal 4.179/2022. 
+
+Severidade: Baixa
+
+Ação recomendada: garantir publicação de plano de ação, responsáveis e relatórios periódicos (transparência).
+
+
+3.3 Compras/Contratos (Lei 14.133/2021 e transição)
+
+6. Anulação de pregão eletrônico (veículo para Educação) com base em Lei 14.133 e abertura de prazo recursal
+
+
+
+Evidência: “ANULAR o Pregão Eletrônico nº 37/2025” (Processo 49/2025; veículo para Secretaria de Educação); base no art. 71 da Lei 14.133/2021 e Súmula 473 STF; prazo recursal art. 165. 
+
+Severidade: Baixa/Média (formalmente motivado; mas faltam no Diário os documentos da motivação).
+
+Ação recomendada: exigir no portal: manifestação da Educação, recurso/contrarrazões, parecer da agente de contratação e quais documentos precisavam ser “readequados”.
+
+
+7. Aditivo relevante de transporte escolar (R$ 1,190,264,00) — ponto de atenção para fiscalização/qualidade e justificativa de reajuste
+
+
+
+Evidência: 3º Termo Aditivo Contrato 249/2023: prorroga rotas; reajuste 3,90% (INPC dez/2025); valor R$ 1.190.264,00; objeto transporte escolar (micro-ônibus/ônibus). 
+
+Severidade: Alta (por valor e sensibilidade do serviço).
+
+Ação recomendada: solicitar: planilha de custos, medições, rotas, frequência, penalidades aplicadas, relatórios de fiscalização e justificativa do reajuste (e aderência ao contrato e ao índice).
+
+
+8. Inexigibilidade para Imprensa Nacional (DOU) por 12 meses — tende a ser compatível, mas exige prova de preço/tabela oficial
+
+
+
+Evidência: Inexigibilidade 02/2026 (Proc. Adm. 805/2026): contratação da Imprensa Nacional para publicar atos no DOU; fundamento art. 74, I, Lei 14.133/21; R$ 3.000,00/12 meses; há menção de parecer do Controle Interno. 
+
+Severidade: Baixa/Média
+
+Ação recomendada: anexar ao processo: tabela de preços oficial da Imprensa Nacional e estimativa de volume (para evidenciar economicidade).
+
+
+
+---
+
+4) Controle de Compatibilidade com CF/88
+
+Tema	Base constitucional	Status	Justificativa
+
+Taxas por serviço específico/divisível	art. 145, II (taxas)	Potencial ponto de atenção	O decreto fundamenta diretamente no art. 145, II e cita SV 19 e SV 29, mas a validade material depende da efetiva divisibilidade/especificidade e da metodologia de cálculo (memória de cálculo).  
+Publicidade / transparência	art. 37, caput	Tende a compatível	O Diário publica decretos, portarias, aditivos e pautas de conselhos (FUNDEB/CME). 
+Devido processo administrativo em licitações	art. 37, caput (legalidade/moralidade/publicidade)	Tende a compatível (formal)	Anulação de pregão com base legal e abertura de prazo recursal; documentos de motivação não constam integralmente no Diário. 
+
+
+
+---
+
+5) Auditoria Fiscal/Orçamentária (quando aplicável)
+
+5.1 Taxa de Coleta de Lixo (impacto fiscal indireto)
+
+Item	Valor/quantidade	Evidência	Observação
+
+Custo contábil do serviço (2025)	R$ 6.017.837,48		Necessita demonstrativo contábil detalhado (custos que compõem).
+Imóveis com área edificada (zona urbana)	17.511		Base do rateio; precisa consistência com cadastro imobiliário.
+Base apurada	R$ 343,66		Sem planilha/memória, fica auditável só “no papel”.
+Forma de cobrança	conta SAAE / carnê apartado		Checar integração cadastral e exceções.
+
+
+Conclusão fiscal (deste item): Inconsistente do ponto de vista de prova documental, não por erro explícito, mas porque faltam anexos/memória de cálculo para auditoria de economicidade e justiça do rateio (o decreto mostra números finais, mas não o “como chegou lá”). 
+
+5.2 Contratos/aditivos (impacto financeiro direto)
+
+Sistema integrado municipal (Contrato 189/2022, 7º aditivo): R$ 623.812,32/12 meses (INPC nov/2025 4,18%). 
+
+Transporte escolar (Contrato 249/2023, 3º aditivo): R$ 1.190.264,00 (INPC dez/2025 3,90%). 
+
+
+Checagem recomendada (padrão de auditoria): comparar reajuste aplicado × cláusula contratual × índice/competência; checar entrega do serviço (SLA, rotas, medição, penalidades).
+
+
+---
+
+6) Correções Sugeridas
+
+1. Decreto 4.366 (Taxa do Lixo): anexar e publicar memória de cálculo
+
+
+
+Como corrigir: publicar como anexo do processo (e preferencialmente linkado no portal):
+
+composição do custo (empenhos por natureza/fornecedor),
+
+critérios de rateio,
+
+validação contábil,
+
+tratamento de imóveis isentos/não edificados/sem ligação SAAE.
+
+
+Objetivo: reduzir risco de questionamento por “taxa com cara de imposto” e aumentar auditabilidade.
+
+
+2. Portaria 006/2026: ajustar “consultivo e deliberativo” se conflitar com competências legais
+
+
+
+Como corrigir: após cruzar com a LOM/1990, se necessário, substituir por “consultivo e de acompanhamento”, delimitando que decisões finais seguem a competência do Chefe do Executivo e das unidades responsáveis.
+
+
+3. Aditivos (transporte escolar e sistema integrado): fortalecer transparência de fiscalização
+
+
+
+Como corrigir: publicar relatório sintético de fiscalização (rotas, medições, conformidade, ocorrências) e termo de referência de desempenho esperado, por se tratar de serviço essencial e valores relevantes.
+
+
+
+---
+
+7) Pendências e Dados Ausentes
+
+1. Dias/edições não anexados: 17, 18, 24 e 25/01/2026 (podem conter decretos, créditos, nomeações, contratos).
+
+
+2. LOM/1990 (texto integral) não anexada nesta auditoria: necessária para confirmar:
+
+competência e limites do Executivo para regulamentar taxa,
+
+estrutura/competência de comissões e organização administrativa,
+
+regras locais de finanças/orçamento (se houver).
+
+
+
+3. Processos administrativos completos (não publicados no Diário) para:
+
+memória de cálculo da taxa do lixo;
+
+justificativas e peças recursais/pareceres da anulação do pregão;
+
+fiscalização dos aditivos (especialmente transporte escolar).
+
+
+
+
+
+---
+
+8) Anexo de Rastreamento (trechos usados)
+
+Decreto 4.366/2026 – fundamentos CF/88 art. 145 II; SV 19/29; CTM 2.260/2001; regras de cobrança via SAAE e carnê:  
+
+Portaria 006/2026 – comissão de planejamento orçamentário/indicadores: 
+
+Portaria 007/2026 – comissão ODS/IEG-M: 
+
+Anulação Pregão Eletrônico 37/2025 (veículo Educação) – base Lei 14.133: 
+
+Aditivo Contrato 249/2023 (transporte escolar) – valor e índice: 
+
+Inexigibilidade 02/2026 (Imprensa Nacional/DOU) – valor e fundamento: 
+
+Comunicados FUNDEB/CME (pautas receitas/despesas): 
+
+
+
+---
+
+Se você me mandar o restante do mês, eu fecho a auditoria de janeiro/2026 com:
+
+inventário completo por tipo de ato (decreto/portaria/edital/contrato/crédito),
+
+mapa de valores (contratos/aditivos/terceiro setor/qualquer crédito/remanejamento),
+
+e uma matriz de risco (alto/médio/baixo) por secretaria e tema.

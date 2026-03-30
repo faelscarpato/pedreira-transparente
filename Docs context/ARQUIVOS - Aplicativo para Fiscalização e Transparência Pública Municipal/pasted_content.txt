@@ -1,0 +1,285 @@
+According to a document from 06/01/2026 a 14/01/2026 (edições 1924 a 1930), segue auditoria técnica preliminar do Diário Oficial de Pedreira – Janeiro/2026 (com base apenas nos PDFs anexados; o mês não está completo nesta remessa).
+
+
+---
+
+1) Identificação do Documento
+
+Conjunto auditado (parcial do mês): Diário Oficial do Município de Pedreira/SP – ANO VIII (Poder Executivo)
+Edições analisadas: 1924 (06/01/2026), 1925 (07/01/2026), 1926 (08/01/2026), 1927 (09/01/2026), 1928 (12/01/2026), 1929 (13/01/2026), 1930 (14/01/2026).       
+
+Principais atos normativos/administrativos identificados no recorte
+
+1. Decreto nº 4340 (03/12/2025) – crédito adicional suplementar por anulação (R$ 1.225.300,00), com base na Lei nº 4442/2024.  
+
+
+2. Decreto nº 4364 (08/01/2026) – crédito suplementar por excesso de arrecadação (R$ 15.067,35) na Fundação Beneficente, com base na Lei nº 4.556/2025 e Portaria GM/MS nº 9624/2025 (citada). Atenção: data final do decreto está como 08/01/2025 (inconsistência). 
+
+
+3. Portaria nº 002/2026 (05/01/2026) – designa responsáveis pelo “Terceiro Setor” até criação de departamento por lei específica. 
+
+
+4. Portaria nº 001/2026 (05/01/2026) – declara ponto facultativo em datas específicas do exercício de 2026. 
+
+
+5. Publicação do quadro de remunerações/subsídios 2026 (referência expressa ao art. 39, §6º, CF/88 e instruções do TCESP).  
+
+
+6. Despacho do Prefeito – anula Concorrência 13/2025 (Processo 55/2025) sobre videomonitoramento nas escolas; fundamenta em art. 71, Lei 14.133/2021 e Súmula 473 STF; abre prazo recursal (art. 165). 
+
+
+7. Edital de Chamamento Público nº 01/2026 (Carnafolia 2026) – seleção de entidade filantrópica para gerenciar Praça de Alimentação; critérios e desempate descritos (inclusive sorteio em certas hipóteses).  
+
+
+8. Licitações/contratos e Terceiro Setor – pregão eletrônico 01/2026 (dieta enteral); rescisão unilateral com sanções; extratos de termos/aditamentos e atos de dispensa (FUNBEPE/SAAE).   
+
+
+
+Autor / Datas / Votações (processo legislativo):
+
+Para Decretos/Portarias/Despachos/Editais administrativos, não há “votações” (não é PL/Lei).
+
+Para atos referenciando “Lei Municipal nº …”, não consta no Diário anexado o histórico legislativo (autor, datas de votação, quórum). INFORMAÇÃO AUSENTE nos PDFs deste recorte.
+
+
+
+---
+
+2) Resumo Executivo (não técnico)
+
+No recorte analisado do Diário Oficial de janeiro/2026, há forte conteúdo orçamentário (crédito suplementar), gestão de pessoal (ponto facultativo, cessão, publicação de remunerações), licitações/contratos (pregões, dispensa, rescisão unilateral com sanções) e parcerias do Terceiro Setor (termos de colaboração/aditamentos e chamamentos).
+O principal ponto de atenção fiscal é o Decreto nº 4340, que movimenta R$ 1,225 milhão por anulação de dotações, com grande retirada de limpeza pública e realocação para educação infantil (creches) e outras áreas. Há coerência aritmética entre suplementação e anulação, mas recomenda-se exigir o processo contábil completo (justificativas e demonstrativos).
+Há também inconsistência formal relevante no Decreto nº 4364: ele é de 2026, mas foi datado ao final como 08/01/2025 (possível erro material).
+No campo de integridade administrativa, destaca-se despacho de anulação de licitação de videomonitoramento escolar com base na Lei 14.133 e abertura de prazo recursal, o que é positivo do ponto de vista de motivação/publicidade.
+
+
+---
+
+3) Achados Jurídicos (Leis Municipais + LOM/1990)
+
+> Nota de conformidade: a verificação “artigo por artigo” com a LOM/1990 depende do texto integral da LOM na auditoria. Não foi anexado pelo usuário nesta solicitação, então esta etapa fica como pendência (ver Seção 7).
+
+
+
+1. Crédito suplementar por anulação com rastreabilidade suficiente (Decreto 4340), mas exige processo completo para validar motivação e impacto setorial
+
+
+
+Evidência: abre crédito suplementar por anulação no valor de R$ 1.225.300,00, listando rubricas suplementadas e anuladas.  
+
+Regra/Princípio: legalidade e transparência orçamentária (regras locais/LOA + autorização legal citada no próprio decreto).
+
+Severidade: Média (o decreto parece formalmente estruturado, mas falta a “peça” de motivação e pareceres).
+
+Ação recomendada: solicitar processo administrativo do crédito: pedido da secretaria demandante, justificativa, parecer contábil, demonstrativo “antes/depois” por programa/ação e impacto na política pública.
+
+
+2. Risco de “esvaziamento” de dotação de Limpeza Pública (movimentação relevante)
+
+
+
+Evidência: anula R$ 1.040.000,00 da “Divisão de Limpeza Pública” para compor o crédito; simultaneamente suplementa, entre outros, R$ 705.000,00 em “Divisão de Creches – vencimentos”.  
+
+Regra/Princípio: continuidade do serviço público e planejamento (sem entrar na LOM/1990, que precisa ser anexada).
+
+Severidade: Alta (pela magnitude e potencial impacto operacional).
+
+Ação recomendada: exigir: (i) saldo da dotação de limpeza antes/depois; (ii) cronograma de execução; (iii) se houve compensação por outra fonte; (iv) justificativa por necessidade superveniente.
+
+
+3. Inconsistência formal no Decreto 4364 (data final “2025” em ato de 2026)
+
+
+
+Evidência: Decreto nº 4364 “de 08 de janeiro de 2026”, mas ao final consta “Pedreira (SP), 08 de janeiro de 2025”. 
+
+Regra/Princípio: segurança jurídica, autenticidade e forma do ato administrativo.
+
+Severidade: Alta (erro material pode gerar questionamentos/impugnações).
+
+Ação recomendada: providenciar retificação/republicação com correção da data e indicação expressa de que se trata de erro material.
+
+
+4. Portaria “Terceiro Setor” com previsão de vigência até criação de departamento por lei: risco de institucionalização informal
+
+
+
+Evidência: designação transitória “até que lei específica crie formalmente o Departamento correspondente”. 
+
+Regra/Princípio: organização administrativa deve respeitar reserva legal quando houver criação/estruturação de órgãos (checar LOM/1990).
+
+Severidade: Média (a portaria não cria o departamento; ela antecipa responsáveis, mas pode virar arranjo permanente).
+
+Ação recomendada: (i) fixar prazo certo ou gatilhos objetivos; (ii) tramitar o PL de criação/estrutura do setor; (iii) publicar competências, fluxos, responsável e controles.
+
+
+5. Anulação de licitação de videomonitoramento com motivação e base legal explicitadas (ponto positivo), mas precisa de publicidade integral do parecer
+
+
+
+Evidência: despacho anula Concorrência 13/2025, fundamenta Lei 14.133/2021 art. 71 e Súmula 473 STF; menciona parecer técnico e readequação de planilha; abre prazo recursal. 
+
+Regra/Princípio: motivação, autotutela, publicidade e devido processo administrativo.
+
+Severidade: Baixa/Média (bom padrão formal; pendência é transparência do “parecer” que motivou).
+
+Ação recomendada: publicar/indicar link do parecer técnico e da planilha readequada, para controle social.
+
+
+
+---
+
+4) Controle de Compatibilidade com CF/88
+
+Tema	Base constitucional (referência)	Status	Justificativa
+
+Publicidade/Transparência (atos e gastos)	art. 37, caput (princípios)	Tende a compatível	Há publicação formal dos atos, extratos e quadros remuneratórios. 
+Transparência remuneratória	art. 39, §6º	Compatível (no recorte)	O Diário traz quadro de remuneração/subsídios conforme indicado no próprio texto.  
+Legalidade orçamentária (créditos)	arts. 165–167 (regras orçamentárias)	Potencial ponto de atenção	O decreto de R$ 1,225 mi está formalmente estruturado e “fecha” por anulação, mas falta a motivação e demonstrativos no recorte.  
+Segurança jurídica/forma do ato	art. 37 (legalidade)	Potencial incompatibilidade formal	Inconsistência de data em decreto (2026 vs 2025) pode macular a forma/publicação. 
+
+
+
+---
+
+5) Auditoria Fiscal/Orçamentária (se aplicável)
+
+5.1 Tabela de valores – Decreto nº 4340 (Crédito suplementar por anulação)
+
+Total do crédito: R$ 1.225.300,00 (Suplementação = Anulação)  
+
+Origem (Anulação)	Destino (Suplementação)	Rubrica/área (resumo)	Valor (R$)	Observação
+
+Divisão de Limpeza Pública	Divisão de Creches	reforço de despesas (inclui vencimentos)	1.040.000,00 (origem) / 705.000,00 (destino)	Maior deslocamento; risco de impacto operacional.  
+Deptº Contabilidade	Deptº Financeiro/Tesouraria	TI (origem) → Sentenças judiciais (destino)	8.300,00	Coerente no “fecha”, mas requer motivação (por que sentenças).  
+Obras e Vias Públicas	Segurança Pública	serviços/equipamentos	80.000,00 (origem) / 94.000,00 (destino em seg. pública no recorte)	Destinos distribuídos; conferir impacto em obras.  
+Fundo Assistência Social	Várias (Adm/Orçamento etc.)	contratação temporária (origem)	30.000,00	Pode afetar execução da assistência; exigir saldo. 
+
+
+Checagens aritméticas (no texto publicado):
+
+Suplementação totaliza R$ 1.225.300,00. 
+
+Anulação totaliza R$ 1.225.300,00 (consta inclusive o fechamento “-1.225.300,00”). 
+
+
+Conclusão fiscal: Regular (aritmeticamente), porém Alto risco setorial pela concentração de anulação em Limpeza Pública e pela ausência, no Diário recortado, de demonstrativos de saldo/impacto.
+
+5.2 Decreto nº 4364 (Fundação Beneficente) – Excesso de arrecadação
+
+Valor: R$ 15.067,35 (excesso de arrecadação; Portaria GM/MS nº 9624/2025 citada). 
+
+Risco fiscal: Baixo (valor pequeno e fonte indicada), mas com risco formal alto por erro de data (Seção 3, achado 3). 
+
+
+
+---
+
+6) Correções Sugeridas
+
+1. Decreto 4364 – corrigir erro material de data
+
+
+
+Como corrigir: publicar retificação (errata) ou republicação do decreto, mantendo numeração e conteúdo, corrigindo a data final para 2026 e explicitando “erro material”.
+
+Minuta sugerida (errata):
+
+
+ERRATA
+No Decreto nº 4364, de 08 de janeiro de 2026, onde se lê:
+“Pedreira (SP), 08 de janeiro de 2025.”
+Leia-se:
+“Pedreira (SP), 08 de janeiro de 2026.”
+Mantêm-se inalterados os demais termos.
+
+2. Decreto 4340 – reforçar transparência do remanejamento
+
+
+
+Como corrigir/aperfeiçoar: anexar/publicar link (ou referência) ao processo administrativo do crédito, com:
+
+justificativa da necessidade,
+
+demonstrativo de saldo de dotação de Limpeza Pública antes/depois,
+
+impacto na execução de contratos/serviços continuados,
+
+parecer contábil/planejamento.
+
+
+
+3. Portaria 002/2026 – evitar “transitoriedade indefinida”
+
+
+
+Como corrigir: estabelecer prazo ou cronograma para envio do PL de criação/estrutura do setor; publicar responsabilidades/fluxos e controles internos. 
+
+
+
+---
+
+7) Pendências e Dados Ausentes
+
+Para fechar a auditoria com alta confiança:
+
+1. Mês incompleto: faltam as demais edições de janeiro/2026 (você anexou 06 a 14/01).
+
+
+2. LOM/1990 (Lei Orgânica Municipal): INFORMAÇÃO AUSENTE nesta auditoria (necessária para checar iniciativa/competência local, organização administrativa, regras de orçamento no município).
+
+
+3. Processos administrativos (não publicados integralmente no Diário) para:
+
+crédito suplementar (Decreto 4340),
+
+anulação de licitação de videomonitoramento (parecer técnico e planilhas),
+
+contratos/terceiro setor (planos de trabalho, metas, critérios de repasse/monitoramento).
+
+
+
+
+Perguntas objetivas (máx. 5) para avançar:
+
+1. Você quer auditar o mês inteiro (todas as edições de janeiro/2026) ou focar só nos atos orçamentários/licitações/terceiro setor?
+
+
+2. Pode anexar a LOM/1990 (texto integral) para eu cruzar os pontos de competência e processo?
+
+
+3. Quer que eu priorize a análise do Decreto 4340 (R$ 1,225 mi) com verificação de impacto por secretaria/serviço?
+
+
+4. Você tem o processo/parecer que embasou a anulação da Concorrência 13/2025 (videomonitoramento)?
+
+
+5. Nos termos do Terceiro Setor, você quer que eu faça um mapa de valores totais por entidade no mês?
+
+
+
+
+---
+
+8) Anexo de Rastreamento (onde usei o Diário como evidência)
+
+Decreto 4340 – abertura e suplementações: 
+
+Decreto 4340 – anulações e fechamento “-1.225.300,00”: 
+
+Decreto 4364 – valor, fonte e inconsistência de data: 
+
+Portaria 002/2026 – “até que lei específica crie formalmente o Departamento”: 
+
+Quadro remunerações/subsídios 2026 (referência art. 39, §6º):  
+
+Despacho de anulação da Concorrência 13/2025 (Lei 14.133 / Súmula 473 / prazo recursal): 
+
+Chamamento Carnafolia 2026 (critérios e responsabilidades):  
+
+Pregão Eletrônico 01/2026 (dieta enteral): 
+
+Rescisão unilateral e sanções (trechos e base legal mencionada):  
+
+
+Se você anexar o restante das edições de janeiro/2026, eu consolido: (i) inventário completo de atos por tipo, (ii) totais por secretaria (inclusive “tira de uma secretaria e passa para outra”), e (iii) matriz de risco (alto/médio/baixo) por tema.

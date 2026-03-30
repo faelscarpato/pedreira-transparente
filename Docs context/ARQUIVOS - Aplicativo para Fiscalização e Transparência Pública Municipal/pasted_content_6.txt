@@ -1,0 +1,217 @@
+De acordo com os Projetos de Lei Ordinária (PLO) 2/2025, 9/2025 e 17/2025 (texto extraído com sucesso) e com os arquivos PLO 6/2025, 11/2025 e 13/2025 (onde a extração automática de texto está parcial/indisponível no material recebido via ferramenta), segue a auditoria com identificação nominal e de cargos sempre que o texto permitiu.
+
+> Compromisso de método (aplicado aqui): eu não invento nomes/cargos. Onde o texto do PDF não ficou acessível por extração, marco como INFORMAÇÃO AUSENTE e indico exatamente o que falta (ou o que precisa ser reenviado em melhor qualidade).
+
+
+
+
+---
+
+1) Identificação do Documento
+
+PLO 2/2025
+
+Tipo: PLO (denominação de logradouro)
+
+Tema: Denominação de Praça Municipal (Rua Alex Carrel – Jardim Andrade) como “ANTÔNIO CASTELO NETO”.
+
+Autor/Assinatura (no PLO): Patrícia Trevizan Pedroso – Vereadora.
+
+Data e local (no PLO): Sala das Sessões Vereador Dario Gomes de Oliveira, 17/01/2025.
+**Evidência:**
+
+
+PLO 9/2025
+
+Tipo: PLO (denominação de equipamento público)
+
+Tema: Denominação de Posto de Saúde da Família como “LUIS EDUARDO FRAZATTO FILHO” (Vila Monte Alegre).
+
+Autor/Assinatura (no PLO e justificativa): João Rafael Cavenaghi – Vereador.
+
+Data e local (no PLO): Sala das Sessões Vereador Dario Gomes de Oliveira, 30/01/2025.
+**Evidência:**
+
+
+PLO 17/2025
+
+Tipo: PLO (alteração legislativa)
+
+Tema: Altera a Lei Municipal 3.419/2014 (atendimentos preferenciais), incluindo pacientes com câncer e criando carteira de identificação emitida pela Secretaria Municipal de Saúde.
+
+Autor/Assinatura (no PLO): Leonardo Henrique Cirino – Vereador.
+
+Data e local (no PLO): Sala das Sessões “Vereador Dario Gomes de Oliveira”, 13/03/2025.
+**Evidência:**
+
+
+PLO 6/2025
+
+Tipo: PLO (autorização administrativa/contratual – pelo padrão do expediente)
+
+Assinaturas identificáveis via extração: consta assinatura digital de Fábio Vinicius Polidoro (sem o texto integral do corpo do PL nesta extração).
+**Evidência:**
+
+
+> INFORMAÇÃO AUSENTE (PLO 6/2025): o texto do “Projeto de Lei nº …/2025” (conteúdo e também eventuais assinaturas físicas no corpo do projeto) não veio legível na extração; só aparece o bloco de “verificação de assinaturas”.
+
+
+
+PLO 11/2025 e PLO 13/2025
+
+Status técnico desta auditoria: INFORMAÇÃO AUSENTE para nomes/cargos e conteúdo no padrão rastreável por texto, porque estes PDFs vieram como imagem e não tiveram texto extraível pela ferramenta (necessário reenviar PDF pesquisável ou imagem mais nítida / ou eu posso auditar por páginas se você reenviar em formato que permita leitura de texto).
+
+
+
+---
+
+2) Resumo Executivo (não técnico)
+
+No conjunto de PLOs que deu para ler integralmente (2, 9 e 17), há:
+
+2 projetos simbólicos/administrativos de denominação (praça e unidade de saúde), com autoria parlamentar clara e baixo risco jurídico.
+
+1 projeto materialmente mais sensível (PLO 17/2025), pois cria obrigação administrativa (“carteira de identificação patológica”) vinculada à Secretaria Municipal de Saúde e amplia rol de atendimento preferencial, exigindo cuidado com execução, custos e critérios médicos.
+
+
+Nos PLOs 6/2025, 11/2025 e 13/2025, não foi possível (com rastreabilidade) reconhecer todos os nomes/cargos e o conteúdo integral porque o texto não está acessível nesta extração — então não dá para concluir auditoria completa sem reenviar.
+
+
+---
+
+3) Achados Jurídicos (Leis Municipais + LOM/1990)
+
+Achado 1 — PLO 2/2025 (denominação de praça) está formalmente completo no essencial
+
+Evidência: define denominação e autoriza placa; autoria assinada por Patrícia Trevizan Pedroso – Vereadora.
+
+Risco: baixo (matéria típica de denominação).
+
+Severidade: Baixa
+
+Ação recomendada: conferir se já existe denominação anterior do local (cadastro municipal/placas) para evitar duplicidade (não consta no PLO).
+
+
+Achado 2 — PLO 9/2025 (denominação de USF) tem justificativa e autoria explícitas
+
+Evidência: autoria e justificativa assinadas por João Rafael Cavenaghi – Vereador; denomina USF na Vila Monte Alegre.
+
+Risco: baixo
+
+Severidade: Baixa
+
+Ação recomendada: verificar se o equipamento já tem nome oficial e se a unidade é municipal (não consta no PLO).
+
+
+Achado 3 — PLO 17/2025 cria obrigação administrativa para a Secretaria Municipal de Saúde (emissão de carteira)
+
+Evidência: inclui §3º determinando que a Prefeitura, por meio da Secretaria Municipal de Saúde, emitirá carteira aos pacientes com câncer após laudo médico.
+
+Risco jurídico/operacional:
+
+precisa de procedimento (quem emite, validade, critérios do laudo, proteção de dados de saúde, controle contra fraudes).
+
+risco de “lei programática sem operacionalização”, se não houver regulamentação.
+
+
+Severidade: Média
+
+Ação recomendada: inserir dispositivo mínimo de regulamentação (prazo/autoridade competente/forma de emissão) ou exigir decreto regulamentador logo após a sanção.
+
+
+
+---
+
+4) Controle de Compatibilidade com CF/88
+
+Tema	Base constitucional	Status	Justificativa
+
+Publicidade e impessoalidade em denominação de bens públicos	CF/88 art. 37 caput (princípios)	Tende a compatível	PLOs 2 e 9 tratam de denominação/homenagem (desde que sem promoção pessoal e com critérios).
+Atenção preferencial / proteção de pessoas vulneráveis	CF/88 art. 6º (direitos sociais) + art. 196 (saúde)	Tende a compatível	PLO 17 amplia atendimento preferencial e cria identificação por critério médico (câncer).
+Proteção de dados sensíveis de saúde (execução)	CF/88 art. 5º (direitos fundamentais – intimidade/vida privada)	Potencial ponto de atenção	A carteira envolve condição de saúde; o PLO não prevê salvaguardas. (Inferência técnica, depende de regulamentação).
+
+
+
+---
+
+5) Auditoria Fiscal/Orçamentária (se aplicável)
+
+PLO 2/2025 e PLO 9/2025: impacto fiscal normalmente muito baixo (placa e custos administrativos). O texto prevê despesas por dotações vigentes, suplementadas se necessário.
+
+PLO 17/2025: pode ter impacto administrativo (emissão de carteiras, atendimento, controles), mas não há estimativa de custo no projeto (informação ausente).
+
+
+Conclusão fiscal: Regular (baixo impacto) para PLO 2 e 9; indeterminado para PLO 17 por ausência de estimativa.
+
+
+---
+
+6) Correções Sugeridas
+
+Para o PLO 17/2025 (principal)
+
+Como corrigir: incluir um artigo curto de regulamentação:
+
+prazo (ex.: 60 dias),
+
+órgão responsável (SMS),
+
+requisitos mínimos do laudo,
+
+validade/renovação,
+
+controle e proteção de dados.
+
+
+Minuta objetiva sugerida:
+
+
+Art. X. A Secretaria Municipal de Saúde regulamentará, no prazo de XX dias, o procedimento de emissão,
+validade, renovação e controle da carteira de identificação referida nesta Lei, observadas as regras de
+sigilo e proteção de dados pessoais sensíveis.
+
+
+---
+
+7) Pendências e Dados Ausentes
+
+Para cumprir sua exigência de “reconhecer todos os nomes e cargos” em TODOS os PLOs:
+
+1. PLO 6/2025: só consta bloco de assinatura digital; falta texto integral extraível (conteúdo + eventuais assinaturas no corpo do projeto).
+
+
+2. PLO 11/2025 e PLO 13/2025: texto não extraível (PDF-imagem). Preciso que você reenviem:
+
+PDF “pesquisável” (com texto), ou
+
+PDF/imagens em resolução maior, ou
+
+prints por página em que apareçam claramente assinaturas, autores, destinatários e cargos.
+
+
+
+
+> Assim que você reenviar, eu retorno com: Autor do projeto, subscritor(es), cargo, destinatário (quando houver), data, secretaria envolvida e análise jurídica/fiscal completa.
+
+
+
+
+---
+
+8) Anexo de Rastreamento (trechos usados)
+
+PLO 2/2025: autoria Patrícia Trevizan Pedroso – Vereadora e objeto da denominação.
+
+PLO 9/2025: autoria e justificativa João Rafael Cavenaghi – Vereador e objeto da denominação.
+
+PLO 17/2025: criação de carteira via Secretaria Municipal de Saúde e autoria Leonardo Henrique Cirino – Vereador.
+
+PLO 6/2025: verificação de assinatura digital Fábio Vinicius Polidoro (sem corpo textual extraível).
+
+
+
+---
+
+Próximo passo (sem perguntas longas)
+
+Envie novamente PLO 6/2025, PLO 11/2025 e PLO 13/2025 em versão pesquisável (ou fotos nítidas por página). Aí eu completo 100% a identificação de todos os nomes e cargos, como você exigiu, e fecho a auditoria jurídica + fiscal desses três.

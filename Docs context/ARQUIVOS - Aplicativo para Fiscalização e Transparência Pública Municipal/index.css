@@ -1,0 +1,345 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-600);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --radius: 0.65rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.235 0.015 65);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.235 0.015 65);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.235 0.015 65);
+  --secondary: oklch(0.98 0.001 286.375);
+  --secondary-foreground: oklch(0.4 0.015 65);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.141 0.005 285.823);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.623 0.214 259.815);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.235 0.015 65);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.623 0.214 259.815);
+}
+
+.dark {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-500);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.85 0.005 65);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.85 0.005 65);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.85 0.005 65);
+  --secondary: oklch(0.24 0.006 286.033);
+  --secondary-foreground: oklch(0.7 0.005 65);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground:  oklch(0.92 0.005 65);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.488 0.243 264.376);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.85 0.005 65);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+}
+
+/* ===== ESTILOS DO JORNAL BOCA ABERTA - MOBILE FIRST ===== */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap");
+
+/* Tipografia - Mobile First */
+.font-headline {
+  @apply font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.font-subheadline {
+  @apply font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-wide;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.main-headline {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white drop-shadow-lg;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px rgb(220, 38, 38), 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .main-headline {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px rgb(220, 38, 38), 4px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Cards de Investigação - Mobile First */
+.investigation-card {
+  @apply relative overflow-hidden rounded-lg border-2 border-red-600 bg-black p-3 sm:p-4 md:p-5 lg:p-6 text-white shadow-lg transition-transform hover:scale-105;
+}
+
+.investigation-card::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 via-yellow-400 to-red-600;
+}
+
+.investigation-card h3 {
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2;
+}
+
+.investigation-card p {
+  @apply text-xs sm:text-sm md:text-base leading-relaxed;
+}
+
+.investigation-card time {
+  @apply text-xs sm:text-sm text-gray-400;
+}
+
+/* Faixas de Cor */
+.stripe-yellow {
+  @apply relative border-t-4 border-b-4 border-yellow-400 py-2 px-3 sm:px-4;
+}
+
+.stripe-red {
+  @apply relative border-t-4 border-b-4 border-red-600 py-2 px-3 sm:px-4;
+}
+
+/* Cabeçalho de Seção */
+.section-header {
+  @apply relative border-b-4 border-red-600 pb-2 sm:pb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-black dark:text-white;
+  background: linear-gradient(90deg, rgb(250, 204, 21) 0%, transparent 100%);
+  padding-left: 0.75rem;
+}
+
+/* Números em Destaque */
+.big-number {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-red-600;
+}
+
+.currency-highlight {
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-yellow-400;
+}
+
+/* Caixa de Destaque */
+.highlight-box {
+  @apply relative border-l-4 border-red-600 bg-yellow-50 p-3 sm:p-4 md:p-5 dark:bg-gray-900;
+}
+
+.highlight-box::before {
+  content: "!";
+  @apply absolute -left-3 -top-2 text-2xl sm:text-3xl font-black text-red-600;
+}
+
+/* Efeito de Splatter */
+.splatter-effect {
+  @apply relative;
+  filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
+}
+
+/* Cores do Jornal */
+.text-journal-red {
+  @apply text-red-600;
+}
+
+.text-journal-black {
+  @apply text-black;
+}
+
+.text-journal-yellow {
+  @apply text-yellow-400;
+}
+
+.bg-journal-red {
+  @apply bg-red-600;
+}
+
+.bg-journal-black {
+  @apply bg-black;
+}
+
+.bg-journal-yellow {
+  @apply bg-yellow-400;
+}
+
+/* Espaçamento Responsivo */
+.section-spacing {
+  @apply py-6 sm:py-8 md:py-10 lg:py-12;
+}
+
+.card-spacing {
+  @apply mb-3 sm:mb-4 md:mb-5 lg:mb-6;
+}
+
+/* Grid Responsivo */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6;
+}
+
+/* Flex Responsivo */
+.flex-responsive {
+  @apply flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6;
+}
+
+/* Padding Responsivo */
+.px-responsive {
+  @apply px-3 sm:px-4 md:px-6 lg:px-8;
+}
+
+.py-responsive {
+  @apply py-4 sm:py-5 md:py-6 lg:py-8;
+}
+
+/* Header Responsivo */
+.header-responsive {
+  @apply py-3 sm:py-4 md:py-5 lg:py-6 border-b-4 border-red-600;
+}
+
+/* Form Responsivo */
+@layer components {
+  .form-input-responsive {
+    @apply w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border-2 border-gray-300 focus:border-red-600 focus:outline-none text-sm sm:text-base;
+  }
+
+  .form-label-responsive {
+    @apply block text-sm sm:text-base font-semibold mb-1 sm:mb-2 text-gray-700 dark:text-gray-300;
+  }
+}
+
+/* Button Responsivo */
+@layer components {
+  .btn-primary-responsive {
+    @apply px-4 sm:px-5 md:px-6 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all bg-red-600 text-white hover:bg-red-700 active:scale-95;
+  }
+
+  .btn-secondary-responsive {
+    @apply px-4 sm:px-5 md:px-6 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all bg-yellow-400 text-black hover:bg-yellow-500 active:scale-95;
+  }
+}
+
+/* Navigation Responsivo */
+.nav-responsive {
+  @apply flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4;
+}
+
+.nav-item-responsive {
+  @apply px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+}
